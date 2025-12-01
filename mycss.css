@@ -1,0 +1,272 @@
+/* Basic Setup - DARK THEME */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212; /* Main dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Common styles for all sections */
+section {
+    padding: 25px 20px;
+    margin: 5px auto;
+    max-width: 900px;
+    background-color: #1e1e1e; /* Section dark background */
+    border-radius: 8px;
+    border: 1px solid #333; /* Subtle border */
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+/* 1. NAVBAR */
+.site-header {
+    background-color: #1f1f1f;
+    padding: 15px 30px;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #FFA550;
+}
+
+.menu-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none; /* Desktop lo hide chestham */
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* 2. SLOGAN */
+.slogan-section {
+    text-align: center;
+    background-color: #2a2a2a;
+}
+.slogan-section h2 {
+    color: #f5f5f5;
+    font-style: italic;
+}
+
+/* 3. SEARCH BOX */
+.search-section {
+    text-align: center;
+}
+.search-section input[type="search"] {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.search-section button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* 4. LATEST STORIES */
+.stories-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.story {
+    width: 31%;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.story h4 {
+  color: orange;
+  font-size: 20px;
+}
+
+.button-cat {
+      display: inline-block;
+      background-color: #ffa550;
+      color: #ffffff;
+      padding: 10px 20px;
+    margin: 2px;
+    
+    /* Text Style */
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    
+    /* Shape & Interaction */
+    border: 2px solid #ffa555; /* Same as background for solid button */
+    border-radius: 5px;        /* Rounded Corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+      
+    }
+    
+
+.button {
+    /* Basic Look */
+    display: inline-block;
+    background-color: #d9534f; /* Main Brand Color (Red) */
+    color: #ffffff;             /* White Text */
+    
+    
+    
+    /* Spacing */
+    padding: 12px 25px;
+    margin: 5px;
+    
+    /* Text Style */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    
+    /* Shape & Interaction */
+    border: 2px solid #d9534f; /* Same as background for solid button */
+    border-radius: 5px;        /* Rounded Corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect for the button */
+.button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+    border-color: #c9302c;
+}
+
+/* 5. CATEGORIES */
+.categories-list {
+    list-style: none;
+    color: #ffa550;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.categories-list li {
+    background-color: #333;
+    color: #ffa550;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* 6. SOCIAL MEDIA */
+.social-section {
+    text-align: center;
+    color: #;
+}
+.social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Social Icons ki Styling */
+.social-icons a {
+    color: #333; /* Icon default color */
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Icons madhyalo space */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover chesinapudu color maradaniki */
+.social-icons a:hover {
+    color: #d9534f; /* Mana brand color */
+}
+
+/* Read More button lo unna icon ki style */
+.read-more-btn i {
+    margin-left: 8px; /* text ki, icon ki madhyalo space */
+}
+
+/* 7. FOOTER */
+
+.site-footer {
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #aaa;
+    padding: 3px;
+    margin-top: 3px;
+    border-top: 1px solid #333;
+}
+
+/* --------------------------------- */
+/* --- RESPONSIVE & MENU LOGIC --- */
+/* --------------------------------- */
+
+@media (max-width: 768px) {
+    /* Mobile lo, Menu Button chupinchu */
+    .menu-button {
+        display: block;
+    }
+    
+    /* Mobile lo, links hide cheyi */
+    .nav-links {
+        display: none; /* Important: Default ga hide */
+        position: absolute;
+        top: 65px; /* Navbar kindha */
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px solid #333;
+    }
+    
+    .nav-links.active {
+        display: flex; /* JS idi add chesthe, menu kanipistundi */
+    }
+    
+    .nav-links a {
+        margin: 15px 0; /* Links kindha kindhaki */
+    }
+
+    /* Mobile lo stories okati kindha okati */
+    .stories-container {
+        flex-direction: column;
+    }
+    .story {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
