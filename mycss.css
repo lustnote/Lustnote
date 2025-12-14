@@ -349,6 +349,66 @@ h3 {
     }
 }
 
+@media (min-width: 992px){
+
+  .swipe-track{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    overflow:visible;
+  }
+
+  .swipe-card{
+    width:320px;
+    background:linear-gradient(145deg,#0b1220,#121a2e);
+    border-radius:18px;
+    padding:28px 22px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+    transition:all .3s ease;
+    text-align:center;
+  }
+
+  .swipe-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 30px 60px rgba(0,0,0,0.7);
+  }
+
+  .card-title{
+    font-size:22px;
+    font-weight:800;
+    color:#ffffff;
+    margin-bottom:10px;
+  }
+
+  .card-desc{
+    font-size:15px;
+    color:#cfd6de;
+    line-height:1.6;
+    margin-bottom:20px;
+  }
+
+  .card-btn{
+    display:inline-block;
+    padding:12px 26px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#ff6b6b,#ff9068);
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+    transition:all .25s ease;
+  }
+
+  .card-btn:hover{
+    background:linear-gradient(135deg,#ff9068,#ff6b6b);
+    transform:scale(1.05);
+  }
+
+  /* hide arrows on desktop (optional) */
+  .swipe-arrow{
+    display:none;
+  }
+      }
+
 /* Responsive */
 @media(max-width:900px){
   .swipe-card{flex:0 0 calc((100% / 2) - 15px);}
