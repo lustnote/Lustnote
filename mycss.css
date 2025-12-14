@@ -269,4 +269,110 @@ h3 {
         width: 100%;
         margin-bottom: 15px;
     }
+
+    .swipe-wrap {
+  max-width:1100px;
+  margin:20px auto;
+  padding:10px;
+  font-family:system-ui,Roboto,Arial;
 }
+
+.swipe-track {
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  padding:8px 4px;
+  scrollbar-width:none;
+}
+.swipe-track::-webkit-scrollbar{display:none}
+
+/* Card style */
+.swipe-card{
+  flex:0 0 calc((100% / 3) - 15px);
+  background:#0f1724;
+  color:#fff;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.08);
+  padding:20px 15px;
+  box-sizing:border-box;
+  scroll-snap-align:center;
+  text-align:center;
+  transition:.25s ease;
+}
+.swipe-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.45);
+}
+
+.card-title{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:8px;
+}
+.card-desc{
+  font-size:14px;
+  color:#9fb0c6;
+  margin-bottom:12px;
+}
+
+.card-btn{
+  display:inline-block;
+  background:#ff6b6b;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:700;
+}
+
+/* Arrow buttons */
+.swipe-arrow{
+  position:relative;
+  top:50%;
+  background:rgba(0,0,0,0.45);
+  color:#fff;
+  padding:8px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  user-select:none;
+  margin:0 5px;
+}
+
+/* Layout */
+.swipe-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+    }
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .swipe-card{flex:0 0 calc((100% / 2) - 15px);}
+}
+@media(max-width:480px){
+  .swipe-card{flex:0 0 90%;}
+  .swipe-arrow{display:none;} /* hide arrows on small screens */
+}
+
+
+
+
+/* LustNote like/dislike widget - paste into head or CSS file */
+.ln-widget{max-width:560px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:10px;display:flex;gap:12px;align-items:center;font-family:system-ui,Roboto,sans-serif}
+.ln-info{flex:1}
+.ln-counts{display:flex;gap:8px;align-items:center}
+.ln-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);cursor:pointer;user-select:none;background:rgba(255,255,255,0.01);color:#fff}
+.ln-btn:hover{transform:translateY(-2px)}
+.ln-btn.active{box-shadow:0 6px 18px rgba(0,0,0,0.45);border-color:rgba(255,255,255,0.06)}
+.ln-btn .ico{font-weight:700}
+.ln-views{margin-left:auto;font-size:13px;color:#9fb0c6}
+.ln-small{font-size:13px;color:#9fb0c6;margin-top:6px}
+.pop{transform:scale(1.08);transition:transform .12s ease}
+@media (max-width:420px){.ln-widget{padding:8px}.ln-btn{padding:7px}}
+
+
+      
