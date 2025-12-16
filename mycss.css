@@ -146,16 +146,6 @@ h3 {
     color: #000;
 }
 
-.search-item {
-    padding: 12px;
-    border-bottom: 1px solid #333;
-    color: #fff;
-}
-
-.search-result-wrapper {
-    position: relative;
-}
-
     
 /* (Optional) Hide animation smooth */
 .story[style*="none"] {
