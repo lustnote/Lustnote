@@ -106,7 +106,7 @@ h3 {
     margin-top: 8px; 
     padding: absolut; 
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX;
     background: #1e1e1e; 
     border-radius: 8px; 
     z-index: 9999; 
