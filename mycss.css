@@ -76,7 +76,9 @@ h3 {
 /* 3. SEARCH BOX */
 .search-section {
     text-align: center;
+    margin: 15px auto;
 }
+
 .search-section input[type="search"] {
     padding: 12px;
     width: 70%;
@@ -86,6 +88,7 @@ h3 {
     border-radius: 5px;
     font-size: 1em;
 }
+
 .search-section button {
     padding: 12px 20px;
     background-color: #007BFF;
@@ -95,6 +98,29 @@ h3 {
     cursor: pointer;
     font-size: 1em;
 }
+
+/* 🔥 SEARCH RESULT VISIBILITY FIX */
+.story {
+    transition: all 0.2s ease;
+}
+
+/* (Optional) Hide animation smooth */
+.story[style*="none"] {
+    opacity: 0;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+    .search-section input[type="search"] {
+        width: 90%;
+        margin-bottom: 8px;
+    }
+
+    .search-section button {
+        width: 90%;
+    }
+}
+
 
 /* 4. LATEST STORIES */
 .stories-container {
