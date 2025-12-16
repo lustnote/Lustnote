@@ -103,8 +103,15 @@ h3 {
 
 #search-results {
     max-width: 800px;
-    margin: 15px auto;
-}
+    margin-top: 8px; 
+    padding: absolut; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e1e1e; 
+    border-radius: 8px; 
+    z-index: 9999; 
+    display: none;
+  }
 
 .search-result-item {
     padding: 10px;
@@ -129,9 +136,13 @@ h3 {
 }
 
 .search-item {
-    padding: 10px;
+    padding: 12px;
     border-bottom: 1px solid #333;
     color: #fff;
+}
+
+.search-result-wrapper {
+    position: relative;
 }
 
     
