@@ -1,69 +1,84 @@
+document.addEventListener("DOMContentLoaded", () => {
 
-function doSearch() {
-    const q = searchInput.value.toLowerCase().trim();
+    // -----------------------------
+    // SELECT ELEMENTS
+    // -----------------------------
+    const searchInput = document.querySelector(".search-section input");
+    const searchButton = document.querySelector(".search-section button");
     const resultsBox = document.getElementById("search-results");
 
-    // Safety check
-    if (!resultsBox) return;
-
-    resultsBox.innerHTML = "";
-
-    // Minimum 2 letters
-    if (q.length < 2) {
-        resultsBox.style.display = "none";
+    if (!searchInput || !resultsBox) {
+        console.error("Search input or results container missing");
         return;
     }
 
-    resultsBox.style.display = "block";
+    // -----------------------------
+    // SEARCH FUNCTION
+    // -----------------------------
+    function doSearch() {
+        const q = searchInput.value.toLowerCase().trim();
+        resultsBox.innerHTML = "";
 
-    let found = false;
+        if (q.length < 2) {
+            resultsBox.style.display = "none";
+            return;
+        }
 
-    // -------- STORIES RESULTS --------
-    const allStories = document.querySelectorAll(".story");
+        resultsBox.style.display = "block";
+        let found = false;
 
-    allStories.forEach(story => {
-        const titleEl = story.querySelector("h4");
-        const bodyEl = story.querySelector("p");
+        // -------- STORIES --------
+        const allStories = document.querySelectorAll(".story");
 
-        const title = titleEl ? titleEl.textContent.toLowerCase() : "";
-        const body = bodyEl ? bodyEl.textContent.toLowerCase() : "";
+        allStories.forEach(story => {
+            const titleEl = story.querySelector("h4");
+            const bodyEl = story.querySelector("p");
 
-        if (title.includes(q) || body.includes(q)) {
-            found = true;
+            const title = titleEl ? titleEl.textContent.toLowerCase() : "";
+            const body = bodyEl ? bodyEl.textContent.toLowerCase() : "";
 
-            resultsBox.innerHTML += `
+            if (title.includes(q) || body.includes(q)) {
+                found = true;
+                resultsBox.innerHTML += `
+                    <div class="search-item">
+                        <span class="search-tag tag-story">Story</span>
+                        <strong>${titleEl.textContent}</strong>
+                    </div>
+                `;
+            }
+        });
+
+        // -------- CATEGORIES --------
+        const categories = document.querySelectorAll(".categories-list li");
+
+        categories.forEach(cat => {
+            const text = cat.textContent.toLowerCase();
+
+            if (text.includes(q)) {
+                found = true;
+                resultsBox.innerHTML += `
+                    <div class="search-item">
+                        <span class="search-tag tag-category">Category</span>
+                        <strong>${cat.textContent}</strong>
+                    </div>
+                `;
+            }
+        });
+
+        // -------- NO RESULTS --------
+        if (!found) {
+            resultsBox.innerHTML = `
                 <div class="search-item">
-                    <span class="search-tag tag-story">Story</span>
-                    <strong>${titleEl.textContent}</strong>
+                    <small>No results found</small>
                 </div>
             `;
         }
-    });
-
-    // -------- CATEGORY RESULTS --------
-    const categories = document.querySelectorAll(".categories-list li");
-
-    categories.forEach(cat => {
-        const text = cat.textContent.toLowerCase();
-
-        if (text.includes(q)) {
-            found = true;
-
-            resultsBox.innerHTML += `
-                <div class="search-item">
-                    <span class="search-tag tag-category">Category</span>
-                    <strong>${cat.textContent}</strong>
-                </div>
-            `;
-        }
-    });
-
-    // -------- NO RESULTS --------
-    if (!found) {
-        resultsBox.innerHTML = `
-            <div class="search-item">
-                <small>No results found</small>
-            </div>
-        `;
     }
-                        }
+
+    // -----------------------------
+    // EVENTS (THIS WAS MISSING 🔥)
+    // -----------------------------
+    searchInput.addEventListener("input", doSearch);
+    searchButton.addEventListener("click", doSearch);
+
+});
