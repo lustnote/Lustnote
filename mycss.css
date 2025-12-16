@@ -104,6 +104,34 @@ h3 {
     transition: all 0.2s ease;
 }
 
+#search-results {
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.search-tag {
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+.tag-story {
+    background: #007BFF;
+    color: #fff;
+}
+
+.tag-category {
+    background: #ffa550;
+    color: #000;
+}
+
+    
 /* (Optional) Hide animation smooth */
 .story[style*="none"] {
     opacity: 0;
