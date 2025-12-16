@@ -3,60 +3,63 @@
 // --------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Inputs
+    // -----------------------------
+    // SELECTORS
+    // -----------------------------
     const searchInput = document.querySelector(".search-section input");
     const searchButton = document.querySelector(".search-section button");
-
-    // Story cards (index page static stories)
-    const staticStories = document.querySelectorAll(".story");
-
-    // Categories list items
     const categories = document.querySelectorAll(".categories-list li");
+    const latestContainer = document.getElementById("latest-stories");
+
+    if (!searchInput) {
+        console.warn("Search input not found");
+        return;
+    }
 
     // -----------------------------
-    // 1) SEARCH SYSTEM
+    // 1) SEARCH SYSTEM (STATIC + JSON STORIES)
     // -----------------------------
     function doSearch() {
         const q = searchInput.value.toLowerCase().trim();
 
-        // Search in static stories
-        staticStories.forEach(story => {
-            const title = story.querySelector("h4")?.textContent.toLowerCase() || "";
-            const body = story.querySelector("p")?.textContent.toLowerCase() || "";
+        // 🔁 Always get latest .story elements
+        const allStories = document.querySelectorAll(".story");
 
-            story.style.display = (title.includes(q) || body.includes(q))
-                ? "block"
-                : "none";
+        allStories.forEach(story => {
+            const title =
+                story.querySelector("h4")?.textContent.toLowerCase() || "";
+            const body =
+                story.querySelector("p")?.textContent.toLowerCase() || "";
+
+            // CSS-safe display toggle
+            story.style.display =
+                (title.includes(q) || body.includes(q)) ? "" : "none";
         });
 
-        // Search in categories
+        // Search in categories list
         categories.forEach(cat => {
             const text = cat.textContent.toLowerCase();
             cat.style.display = text.includes(q) ? "inline-block" : "none";
         });
     }
 
-    // Input event
-    searchInput?.addEventListener("input", doSearch);
+    searchInput.addEventListener("input", doSearch);
     searchButton?.addEventListener("click", doSearch);
 
     // -----------------------------
     // 2) LOAD LATEST 3 STORIES FROM JSON
     // -----------------------------
-    const latestContainer = document.getElementById("latest-stories");
-
     if (latestContainer) {
         fetch("searchbox.json?ts=" + Date.now(), { cache: "no-store" })
             .then(res => res.json())
             .then(data => {
 
-                // Sort by date DESC (new → old)
+                // Sort by date (newest first)
                 data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
                 // Pick latest 3
                 const latest = data.slice(0, 3);
-
-                latestContainer.innerHTML = ""; // clear
+                latestContainer.innerHTML = "";
 
                 latest.forEach(story => {
                     const card = document.createElement("div");
@@ -73,9 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     latestContainer.appendChild(card);
                 });
-
             })
-            .catch(err => console.error("Error loading latest stories:", err));
+            .catch(err =>
+                console.error("Error loading latest stories:", err)
+            );
     }
 
 });
