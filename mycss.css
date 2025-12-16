@@ -99,10 +99,7 @@ h3 {
     font-size: 1em;
 }
 
-/* 🔥 SEARCH RESULT VISIBILITY FIX */
-.story {
-    transition: all 0.2s ease;
-}
+
 
 #search-results {
     max-width: 800px;
