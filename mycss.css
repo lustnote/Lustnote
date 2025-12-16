@@ -112,7 +112,6 @@ h3 {
     transform: translateX(-50%);
     background: #1e1e1e; 
     border-radius: 8px; 
-    z-index: 9999; 
     display: none;
   }
 
