@@ -103,8 +103,11 @@ h3 {
 
 #search-results {
     max-width: 800px;
+    width:90%;
     margin-top: 8px; 
     padding: absolut; 
+     left: 50%;
+    transform: translateX(-50%);
     background: #1e1e1e; 
     border-radius: 8px; 
     z-index: 9999; 
@@ -114,7 +117,14 @@ h3 {
 .search-result-item {
     padding: 10px;
     border-bottom: 1px solid #333;
+    color: #fff;
 }
+
+/* Prevent page jump */
+.search-results-wrapper {
+    position: relative;
+}
+    
 
 .search-tag {
     font-size: 11px;
