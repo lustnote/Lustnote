@@ -131,17 +131,25 @@ h3 {
     border-bottom: none;
 }
 
+    font-size: 16px;
+    line-height: 1.4;
+}
+
 /* Prevent page jump */
 .search-results-wrapper {
     position: relative;
 }
     
 
+.search-tags {
+    display: flex;
+    gap: 6px;
+}
+
 .search-tag {
     font-size: 11px;
-    padding: 3px 6px;
-    border-radius: 4px;
-    margin-right: 6px;
+    padding: 4px 8px;
+    border-radius: 6px;
 }
 
 .tag-story {
