@@ -127,6 +127,10 @@ h3 {
     gap: 6px;
 }
 
+.search-item:last-child {
+    border-bottom: none;
+}
+
 /* Prevent page jump */
 .search-results-wrapper {
     position: relative;
