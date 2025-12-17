@@ -104,9 +104,9 @@ h3 {
 
 
 #search-results {
-    max-width: 800px;
+    max-width: 1000px;
     width:90%;
-    margin: 10px auto; 
+    margin: 12px auto; 
     position: relative;
     top:10% ;
     left:50%;
@@ -115,6 +115,7 @@ h3 {
     background: #1e1e1e; 
     border-radius: 8px; 
     display: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
   }
 
 .search-result-item {
