@@ -119,9 +119,12 @@ h3 {
   }
 
 .search-result-item {
-    padding: 20px;
+    padding: 14px 16px;
     border-bottom: 1px solid #333;
     color: #fff;
+    display:flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 /* Prevent page jump */
