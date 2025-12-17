@@ -128,21 +128,25 @@ h3 {
     border-bottom: none;
 }
 
-    font-size: 16px;
-    line-height: 1.4;
-}
-    
-
 .search-tags {
     display: flex;
     gap: 6px;
+    align-items: center;
 }
 
+/* 🔥 IMPORTANT FIX */
 .search-tag {
     font-size: 11px;
-    padding: 4px 4px;
+    padding: 4px 8px;
     border-radius: 6px;
+    display: inline-block;   /* stop stretching */
+    width: auto;             /* content width only */
+    max-width: fit-content;
+    white-space: nowrap;     /* single line */
 }
+    
+
+
 
 .tag-story {
     background: #007BFF;
