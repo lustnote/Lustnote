@@ -108,10 +108,7 @@ h3 {
     width:90%;
     margin: 12px auto; 
     position: relative;
-    top:10% ;
-    left:50%;
     z-index: 1; 
-    transform: translateX(-50%);
     background: #1e1e1e; 
     border-radius: 8px; 
     display: none;
