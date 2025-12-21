@@ -12,7 +12,7 @@ const stories = [
     title: "nenu na girl friend part 1",
     desc: "nenu na girl friend tho chesina wild sex part 1",
     link: "/Lustnote/telugu/story2-telugu.html",
-    category: "girlfirend",
+    category: "girlfriend",
     date: "2025-12-17"
   },
 
