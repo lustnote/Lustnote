@@ -12,20 +12,45 @@
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/story1</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/story2-telugu.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Categories Page -->
+  <url>
+    <loc>https://lustnote.github.io/Lustnote/telugu/story3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://lustnote.github.io/Lustnote/telugu/story4-telugu-akka-thamudu.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Category Pages -->
   <url>
     <loc>https://lustnote.github.io/Lustnote/Cat/category.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lustnote.github.io/Lustnote/telugu/telugu-aunty-category.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hindi Home Page -->
+  <url>
+    <loc>https://lustnote.github.io/Lustnote/hindi/hindi-home.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
