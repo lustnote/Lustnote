@@ -26,7 +26,7 @@ const stories = [
   },
   
   {
-    id: 3, 
+    id: 4, 
     title: "sruthi akka tho sankrathi",
     desc: "naa akka peru sruthi sankrathi festival lo kukala dengina dhanini",
     link: "/Lustnote/telugu/story4-telugu-akka-thamudu.html",
