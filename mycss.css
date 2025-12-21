@@ -516,4 +516,57 @@ h3 {
 @media (max-width:420px){.ln-widget{padding:8px}.ln-btn{padding:7px}}
 
 
+
+
+
+
+
+
+.suggestions-section {
+  margin: 40px 0;
+}
+
+.suggestions-section h3 {
+  color: #ffa550;
+  margin-bottom: 15px;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.suggest-card {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+}
+
+.suggest-card:hover {
+  transform: translateY(-4px);
+}
+
+.suggest-card h4 {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.suggest-card p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.suggest-tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #007BFF;
+  margin-bottom: 6px;
+}
       
