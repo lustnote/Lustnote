@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERWRB6VXH3">
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ERWRB6VXH3');
+</script>
+
+<link rel="canonical" href="https://lustnote.github.io/Lustnote/stories/telugu/te-aunty-category.html">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Aunty Category Sex Stories In Telugu | Lust Note</title>
+
+
+    <meta name="description" content="Aunty Category Sex stories List. Telugu adult (18+) romantic and intimate kathalu. Full stories.">
+    
+    <meta name="keywords" content="gf bf sex stories, telugu lovers sex stories, sex with girlfriend, girlfriend boyfriend sex, telugu boyfriend sex, telugu ammai, telugu boothu kathalu, 18+ stories telugu, lust note, kamakathalu, kama kathalu, telugu sex, telugu sex stories in english, telugu story in english, akka thamudu sex story, thamudu akka sex story, festival sex, sexy sister, Aunty sex with young boy, pakinti auntus stories, shop aunty sex stories, nurse aunty tho sex, aunty sex.">
+    
+    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="mycss.css">
+<style>
+  .story-card {
+  background:#1e1e1e;
+  padding:15px;
+  margin:12px auto;
+  width:90%;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
+.story-card h3 {
+  color:#ffa550;
+  font-size:18px;
+}
+
+.story-card p {
+  color:#ccc;
+}
+
+.read-btn {
+  display:inline-block;
+  margin-top:8px;
+  background:#007BFF;
+  color:#fff;
+  padding:8px 14px;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.pagination {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  margin:20px 0;
+}
+
+.pagination button {
+  padding:8px 14px;
+  border:none;
+  border-radius:6px;
+  background:#ffa550;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="site-name">Lust Note</div>
+            
+            <div class="menu-button" id="menu-toggle">MENU</div>
+            
+            <div class="nav-links" id="main-menu">
+                <a href="../index.html">Home</a>
+               <a href="../Cat/categories">Categories</a>
+               <a href="#Languages">Languages</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#p&p">Policy & Privacy</a>
+            </div>
+        </nav>
+    </header>
+
+
+        <section class="slogan-section">
+            <h2>Telugu Exclusive exo Stories</h2>
+        </section>
+
+        <section class="search-section">
+            <input type="search" placeholder="Ekkada vethakandi mawa...">
+            <button>Search</button>
+        </section>
+        
+          <div class="container">
+  
+<h1 style="text-align:center;color:#ffa550;">🔥 Aunty Stories</h1>
+
+<div id="story-list"></div>
+
+<div class="pagination">
+  <button id="prevBtn">⬅ Previous</button>
+  <span id="pageInfo"></span>
+  <button id="nextBtn">Next ➡</button>
+</div>
+
+        <br>
+        <br>
+      <section class="social-section">
+            <h3>Follow Us</h3>
+        <div class="social-icons">
+    <a href="https://facebook.com/your-page" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/your-page" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/your-handle" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="https://t.me/your-channel" target="_blank">
+        <i class="fa-brands fa-telegram"></i>
+    </a>
+</div>
+
+</section>
+    </main>
+    
+   
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Lust Note. All rights reserved.</p>
+    </footer>
+
+ <script src="../searchbox.js"></script>
+ <script src="../myjs.js"></script>
+
+<script>
+  const ITEMS_PER_PAGE = 5;
+let currentPage = 1;
+
+// 1️⃣ Filter only aunty stories
+const auntyStories = stories
+  .filter(story => story.category === "aunty")
+  .sort((a, b) => new Date(b.date) - new Date(a.date)); // latest first
+
+const totalPages = Math.ceil(auntyStories.length / ITEMS_PER_PAGE);
+
+const list = document.getElementById("story-list");
+const pageInfo = document.getElementById("pageInfo");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+function renderPage(page) {
+  list.innerHTML = "";
+
+  const start = (page - 1) * ITEMS_PER_PAGE;
+  const end = start + ITEMS_PER_PAGE;
+  const pageStories = auntyStories.slice(start, end);
+
+  pageStories.forEach(story => {
+    list.innerHTML += `
+      <div class="story-card">
+        <h3>${story.title}</h3>
+        <p>${story.desc}</p>
+        <a href="${story.link}" class="read-btn">Read More</a>
+      </div>
+    `;
+  });
+
+  pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+  prevBtn.disabled = currentPage === 1;
+  nextBtn.disabled = currentPage === totalPages;
+}
+
+prevBtn.onclick = () => {
+  if (currentPage > 1) {
+    currentPage--;
+    renderPage(currentPage);
+  }
+};
+
+nextBtn.onclick = () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    renderPage(currentPage);
+  }
+};
+
+// Initial load
+renderPage(currentPage);
+</script>
+
+
+</body>
+</html>
