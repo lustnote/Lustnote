@@ -23,7 +23,7 @@ const stories = [
     link: "/Lustnote/telugu/story3.html",
     category: "girlfriend",
     date: "2025-12-20"
-  }
+  },
   
   {
     id: 3, 
