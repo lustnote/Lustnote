@@ -154,7 +154,13 @@
  <script src="../searchbox.js"></script>
  <script src="../myjs.js"></script>
  <script src="../stories.js"></script>
-            
+
+            <!-- JuicyAds core (MUST be before using ads) -->
+<script async src="https://poweredby.jads.co/js/jads.js"></script>
+<script>
+  window.adsbyjuicy = window.adsbyjuicy || [];
+</script>
+
 <script>
 const ITEMS_PER_PAGE = 5;
 let currentPage = 1;
@@ -162,11 +168,13 @@ let currentPage = 1;
 const filteredStories = stories
   .filter(story =>
     story.language === "telugu" &&
-    (Array.isArray(story.category)
-      ? story.category.includes("girlfriend")
-      : story.category === ("girlfriend")
+    (
+      Array.isArray(story.category)
+        ? story.category.includes("girlfriend")
+        : story.category === "girlfriend"
+    )
   )
-  .sort((a,b)=>new Date(b.date)-new Date(a.date));
+  .sort((a, b) => new Date(b.date) - new Date(a.date));
 
 const totalPages = Math.ceil(filteredStories.length / ITEMS_PER_PAGE);
 
@@ -175,14 +183,20 @@ const pageInfo = document.getElementById("pageInfo");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-function renderPage(page){
-  list.innerHTML="";
-  const start=(page-1)*ITEMS_PER_PAGE;
-  const end=start+ITEMS_PER_PAGE;
-  const pageStories=filteredStories.slice(start,end);
+function renderPage(page) {
+  list.innerHTML = "";
 
-  pageStories.forEach((story,index)=>{
-    list.innerHTML+=`
+  const start = (page - 1) * ITEMS_PER_PAGE;
+  const end = start + ITEMS_PER_PAGE;
+  const pageStories = filteredStories.slice(start, end);
+
+  if (pageStories.length === 0) {
+    list.innerHTML = "<p style='color:#aaa;text-align:center;'>No stories found</p>";
+    return;
+  }
+
+  pageStories.forEach((story, index) => {
+    list.innerHTML += `
       <div class="story-card">
         <h3>${story.title}</h3>
         <p>${story.desc}</p>
@@ -190,29 +204,44 @@ function renderPage(page){
       </div>
     `;
 
-    // ✅ After 2 stories → JuicyAds Banner
-    if(index===1){
-      list.innerHTML+=`
-        <div class="ad-box">
-          <ins class="juicy-ad" data-adzone="1107823" data-width="624" data-height="240"></ins>
+    // 🔥 Banner ad after 2nd story
+    if (index === 1) {
+      list.innerHTML += `
+        <div class="ad-box" style="text-align:center;margin:20px 0;">
+          <ins class="juicy-ad"
+            data-adzone="1107823"
+            data-width="624"
+            data-height="240"></ins>
         </div>
       `;
     }
   });
 
+  // 🔁 Refresh JuicyAds
   (window.adsbyjuicy = window.adsbyjuicy || []).push({});
 
-  pageInfo.textContent=`Page ${currentPage} of ${totalPages}`;
-  prevBtn.disabled=currentPage===1;
-  nextBtn.disabled=currentPage===totalPages;
+  pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+  prevBtn.disabled = currentPage === 1;
+  nextBtn.disabled = currentPage === totalPages;
 }
 
-prevBtn.onclick=()=>{if(currentPage>1){currentPage--;renderPage(currentPage);}};
-nextBtn.onclick=()=>{if(currentPage<totalPages){currentPage++;renderPage(currentPage);}};
+prevBtn.onclick = () => {
+  if (currentPage > 1) {
+    currentPage--;
+    renderPage(currentPage);
+  }
+};
 
+nextBtn.onclick = () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    renderPage(currentPage);
+  }
+};
+
+// Initial load
 renderPage(currentPage);
 </script>
-
 
 </body>
 </html>
