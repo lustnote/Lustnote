@@ -39,7 +39,7 @@ const stories = [
   },
   
   {
-    id: 5;,
+    id: 5,
     title: "Ye dosti hum nahi todenge-1",
     des: "Ye kahani meri aur meri best friend Chikoo ki hai.",
     link: "lustnote/hindi/hindi-story1.html",
