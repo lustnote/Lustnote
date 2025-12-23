@@ -164,7 +164,7 @@ const filteredStories = stories
     story.language === "telugu" &&
     (Array.isArray(story.category)
       ? story.category.includes("girlfriend")
-      : story.category === "girlfriend")
+      : story.category === ("girlfriend")
   )
   .sort((a,b)=>new Date(b.date)-new Date(a.date));
 
