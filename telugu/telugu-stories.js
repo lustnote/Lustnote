@@ -23,15 +23,34 @@ const stories = [
     link: "/Lustnote/telugu/story3.html",
     category: "girlfriend",
     date: "2025-12-20"
-  }
+  },
   
   {
-    id: 3, 
+    id: 4, 
     title: "sruthi akka tho sankrathi",
     desc: "naa akka peru sruthi sankrathi festival lo kukala dengina dhanini",
     link: "/Lustnote/telugu/story4-telugu-akka-thamudu.html",
     category: "akka",
     date: "2025-12-21"
+  },
+
+
+    {
+    id: 5, 
+    title: "gym lo parichayam ayina aunty",
+    desc: " gym lo parichayam ayina aunty ni dengi dengi vadhila",
+    link: "/Lustnote/telugu/gymaunty.html",
+    category: "aunty",
+    date: "2026-03-22"
+  },
+
+    {
+    id: 6, 
+    title: "vineetha girl friend tho having fun",
+    desc: "Vineetha girl friend tho having fun part 1",
+    link: "/Lustnote/telugu/story4-telugu-akka-thamudu.html",
+    category: "girlfriend",
+    date: "2026-03-22"
   }
   
 ];
