@@ -48,7 +48,7 @@ const stories = [
     id: 6, 
     title: "vineetha girl friend tho having fun",
     desc: "Vineetha girl friend tho having fun part 1",
-    link: "/Lustnote/telugu/story4-telugu-akka-thamudu.html",
+    link: "/Lustnote/telugu/telugu-stories/vineethagf.html",
     category: "girlfriend",
     date: "2026-03-22"
   }
