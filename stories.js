@@ -42,7 +42,7 @@ const stories = [
     id: 5,
     title: "Ye dosti hum nahi todenge-1",
     desc: "Ye kahani meri aur meri best friend Chikoo ki hai.",
-    link: "/lustnote/hindi/hindi-story1.html",
+    link: "/Lustnote/hindi/hindi-story1.html",
     category: "dosth",
     language: "hindi",
     date: "2025-12-22"
