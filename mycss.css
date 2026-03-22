@@ -182,7 +182,6 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    grid-template-columns: 1fr;
 }
     
 .story {
@@ -492,7 +491,7 @@ h3 {
 /* Responsive */
 @media(max-width:900px){
   .swipe-card {flex:0 0 calc((100% / 2) - 15px);}
-
+}
 }
 
 @media(max-width:480px){
@@ -514,13 +513,9 @@ h3 {
 .ln-views{margin-left:auto;font-size:13px;color:#9fb0c6}
 .ln-small{font-size:13px;color:#9fb0c6;margin-top:6px}
 .pop{transform:scale(1.08);transition:transform .12s ease}
+
+
 @media (max-width:420px){.ln-widget{padding:8px}.ln-btn{padding:7px}}
-
-
-
-
-
-
 
 
 .suggestions-section {
