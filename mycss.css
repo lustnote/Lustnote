@@ -119,9 +119,10 @@ h3 {
     padding: 14px 16px;
     border-bottom: 1px solid #333;
     color: #fff;
-    display:flex;
+    display:block;
     flex-direction: column;
     gap: 6px;
+    text-decoration: none;
 }
 
 .search-item:last-child {
