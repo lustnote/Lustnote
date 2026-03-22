@@ -158,9 +158,9 @@ h3 {
     color: #000;
 }
 
-.stories-sectyion{
+.stories-section{
     display: grid;
-    grid-template-columns: repeat (3,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
         }
 
