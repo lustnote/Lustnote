@@ -4,16 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchButton = document.querySelector(".search-section button");
     const resultsBox = document.getElementById("search-results");
 
-    let data = [];
-
-    // 🔥 LOAD JSON
-    fetch("searchbox.json")
-        .then(res => res.json())
-        .then(json => {
-            data = json;
-        })
-        .catch(err => console.error("JSON load error:", err));
-
     function doSearch() {
         const q = searchInput.value.toLowerCase().trim();
         resultsBox.innerHTML = "";
@@ -26,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resultsBox.style.display = "block";
         let found = false;
 
-        data.forEach(item => {
+        stories.forEach(item => {
             const title = item.title.toLowerCase();
             const desc = item.desc.toLowerCase();
 
@@ -35,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 resultsBox.innerHTML += `
                     <a href="${item.link}" class="search-item">
-                        <span class="search-tag tag-story">Story</span>
+                        <span class="search-tag tag-story">${item.language}</span>
                         <strong>${item.title}</strong><br>
                         <small>${item.desc}</small>
                     </a>
