@@ -46,7 +46,27 @@ const stories = [
     category: "dosth",
     language: "hindi",
     date: "2025-12-22"
-  }
+  },
+
+  {
+    id: 6, 
+    title: "gym lo parichayam ayina aunty",
+    desc: " gym lo parichayam ayina aunty ni dengi dengi vadhila",
+    link: "/Lustnote/telugu/gymaunty.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-03-22"
+  },
+
+    {
+    id: 7, 
+    title: "vineetha girl friend tho having fun",
+    desc: "Vineetha girl friend tho having fun part 1",
+    link: "/Lustnote/telugu/telugu-stories/vineethagf.html",
+    category: "girlfriend",
+    language: "telugu",
+    date: "2026-03-22"
+    }
 
   
 ];
