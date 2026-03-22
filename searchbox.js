@@ -1,20 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // -----------------------------
-    // SELECT ELEMENTS
-    // -----------------------------
     const searchInput = document.querySelector(".search-section input");
     const searchButton = document.querySelector(".search-section button");
     const resultsBox = document.getElementById("search-results");
 
-    if (!searchInput || !resultsBox) {
-        console.error("Search input or results container missing");
-        return;
-    }
+    if (!searchInput || !resultsBox) return;
 
-    // -----------------------------
-    // SEARCH FUNCTION
-    // -----------------------------
     function doSearch() {
         const q = searchInput.value.toLowerCase().trim();
         resultsBox.innerHTML = "";
@@ -33,17 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
         allStories.forEach(story => {
             const titleEl = story.querySelector("h4");
             const bodyEl = story.querySelector("p");
+            const url = story.getAttribute("data-url");
 
             const title = titleEl ? titleEl.textContent.toLowerCase() : "";
             const body = bodyEl ? bodyEl.textContent.toLowerCase() : "";
 
-            if (title.includes(q) || body.includes(q)) {
+            if ((title.includes(q) || body.includes(q)) && url) {
                 found = true;
+
                 resultsBox.innerHTML += `
-                    <div class="search-item">
+                    <a href="${url}" class="search-item">
                         <span class="search-tag tag-story">Story</span>
                         <strong>${titleEl.textContent}</strong>
-                    </div>
+                    </a>
                 `;
             }
         });
@@ -53,14 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         categories.forEach(cat => {
             const text = cat.textContent.toLowerCase();
+            const url = cat.getAttribute("data-url");
 
-            if (text.includes(q)) {
+            if (text.includes(q) && url) {
                 found = true;
+
                 resultsBox.innerHTML += `
-                    <div class="search-item">
+                    <a href="${url}" class="search-item">
                         <span class="search-tag tag-category">Category</span>
                         <strong>${cat.textContent}</strong>
-                    </div>
+                    </a>
                 `;
             }
         });
@@ -75,9 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // -----------------------------
-    // EVENTS (THIS WAS MISSING 🔥)
-    // -----------------------------
     searchInput.addEventListener("input", doSearch);
     searchButton.addEventListener("click", doSearch);
 
