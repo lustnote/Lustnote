@@ -491,6 +491,7 @@ h3 {
 /* Responsive */
 @media(max-width:900px){
   .swipe-card {flex:0 0 calc((100% / 2) - 15px);}
+.stories-section
 }
 }
 
