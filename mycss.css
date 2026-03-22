@@ -10,6 +10,7 @@ body {
 section {
     padding: 25px 20px;
     max-width: 900px;
+    margin: 0 auto;
     background-color: #1e1e1e; /* Section dark background */
     border-radius: 8px;
     border: 1px solid #333; /* Subtle border */
@@ -346,9 +347,7 @@ h3 {
     }
 
     /* Mobile lo stories okati kindha okati */
-    .stories-section {
-        flex-direction: column;
-    }
+    
     .story {
         width: 100%;
         margin-bottom: 15px;
