@@ -186,7 +186,7 @@ h3 {
     display: grid;
     gap: 20px;
     padding: 20px;
-    grid-template-columns: repeat 1fr;
+    grid-template-columns: 1fr;
 }
     
 .story {
