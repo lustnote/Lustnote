@@ -158,7 +158,9 @@ h3 {
     color: #000;
 }
 
-.stories-section{
+.stories-section {
+    max-width: 900px;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -183,9 +185,6 @@ h3 {
 
 /* 4. LATEST STORIES */
 .stories-section {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
     grid-template-columns: 1fr;
 }
     
