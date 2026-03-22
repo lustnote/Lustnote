@@ -158,6 +158,12 @@ h3 {
     color: #000;
 }
 
+.stories-sectyion{
+    display: grid;
+    grid-template-columns: repeat (3,1fr);
+    gap: 20px;
+        }
+
     
 /* (Optional) Hide animation smooth */
 .story[style*="none"] {
@@ -490,9 +496,12 @@ h3 {
       }
 
 /* Responsive */
-@media(max-width:900px){
-  .swipe-card {flex:0 0 calc((100% / 2) - 15px);}
-.stories-section { grid-template-columns: repeat(2, 1fr);
+@media(max-width:900px) {
+  .swipe-card {flex:0 0 calc((100% / 2) - 15px);
+}
+    
+.stories-section {
+    grid-template-columns: repeat(2, 1fr);
 }
     .story {
     border: 1px solid #333;
