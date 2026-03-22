@@ -66,7 +66,17 @@ const stories = [
     category: "girlfriend",
     language: "telugu",
     date: "2026-03-22"
-    }
+    },
+
+  {
+    id: 8, 
+    title: "telugu aunty categories",
+    desc: "telugu aunty categories list",
+    link: "/Lustnote/telugu/telugu-aunty-category.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-03-22"
+  }
 
   
 ];
