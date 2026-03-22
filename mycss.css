@@ -176,16 +176,15 @@ h3 {
         width: 90%;
     }
 
-
 /* 4. LATEST STORIES */
 .stories-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat 1fr;
 }
     
 .story {
-    width: 31%;
     border: 1px solid #333;
     padding: 15px;
     border-radius: 5px;
