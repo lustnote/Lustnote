@@ -585,4 +585,30 @@ h3 {
   background: #007BFF;
   margin-bottom: 6px;
 }
-      
+
+
+
+
+
+
+/* 🔥 STORIES GRID FINAL */
+
+.stories-section {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .stories-section {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .stories-section {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
