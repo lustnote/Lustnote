@@ -178,7 +178,7 @@ h3 {
 
 
 /* 4. LATEST STORIES */
-.stories-container {
+.stories-section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -341,7 +341,7 @@ h3 {
     }
 
     /* Mobile lo stories okati kindha okati */
-    .stories-container {
+    .stories-section {
         flex-direction: column;
     }
     .story {
@@ -486,12 +486,14 @@ h3 {
   .swipe-arrow{
     display:none;
   }
+    .stories-section { grid-template-columns: repeat(2, 1fr);
+}
       }
 
 /* Responsive */
 @media(max-width:900px){
   .swipe-card {flex:0 0 calc((100% / 2) - 15px);}
-.stories-section
+.stories-section { grid-template-columns: repeat(2, 1fr);
 }
 }
 
@@ -499,10 +501,6 @@ h3 {
   .swipe-card{flex:0 0 90%;}
   .swipe-arrow{display:none;} /* hide arrows on small screens */
 }
-
-
-
-
 /* LustNote like/dislike widget - paste into head or CSS file */
 .ln-widget{max-width:560px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:10px;display:flex;gap:12px;align-items:center;font-family:system-ui,Roboto,sans-serif}
 .ln-info{flex:1}
