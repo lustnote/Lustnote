@@ -9,8 +9,6 @@ body {
 /* Common styles for all sections */
 section {
     padding: 25px 20px;
-    margin: 5px auto;
-    max-width: 900px;
     background-color: #1e1e1e; /* Section dark background */
     border-radius: 8px;
     border: 1px solid #333; /* Subtle border */
