@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home Page -->
+  
   <url>
     <loc>https://lustnote.github.io/Lustnote/index.html</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Telugu Stories -->
+ 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/story1</loc>
     <changefreq>weekly</changefreq>
@@ -33,7 +33,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Category Pages -->
+
   <url>
     <loc>https://lustnote.github.io/Lustnote/Cat/category.html</loc>
     <changefreq>weekly</changefreq>
@@ -46,7 +46,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Hindi Home Page -->
+  
   <url>
     <loc>https://lustnote.github.io/Lustnote/hindi/hindi-home.html</loc>
     <changefreq>weekly</changefreq>
