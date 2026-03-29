@@ -1,4 +1,4 @@
-[
+
 (function(){
   const box = document.getElementById("suggestionsBox");
   if(!box || typeof stories === "undefined") return;
@@ -38,4 +38,3 @@
   });
 
 })();
-]
