@@ -3,38 +3,41 @@
   const box = document.getElementById("related-stories");
   if(!box || typeof stories === "undefined") return;
 
-  // current file name extract
   const currentPath = window.location.pathname;
   const currentFile = currentPath.substring(currentPath.lastIndexOf("/") + 1).toLowerCase();
 
-  // find current story
   let currentStory = stories.find(s => {
     let storyFile = s.link.substring(s.link.lastIndexOf("/") + 1).toLowerCase();
     return storyFile === currentFile;
   });
 
-  if(!currentStory){
-    console.log("❌ Current story not found");
-    return;
-  }
+  if(!currentStory) return;
 
-  // filter related
   let related = stories.filter(s => 
     s.category === currentStory.category &&
     s.language === currentStory.language &&
     s.link !== currentStory.link
   );
 
-  // if less than 4, fill extra
   if(related.length < 4){
-    let extra = stories.filter(s => s.link !== currentStory.link);
+    let extra = stories.filter(s => 
+      s.link !== currentStory.link &&
+      s.language === currentStory.language
+    );
     related = [...related, ...extra];
   }
 
-  // shuffle + pick 4
-  related = related.sort(() => 0.5 - Math.random()).slice(0,4);
+  // 🔥 real random shuffle
+  function shuffleArray(arr){
+    for(let i = arr.length - 1; i > 0; i--){
+      let j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
 
-  // render
+  related = shuffleArray(related).slice(0,4);
+
   box.innerHTML = "";
 
   related.forEach(story => {
