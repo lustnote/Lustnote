@@ -160,7 +160,8 @@ h3 {
 }
 
 .stories-section {
-    max-width: 900px;
+    max-width: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
         }
@@ -535,8 +536,13 @@ h3 {
 .pop{transform:scale(1.08);transition:transform .12s ease}
 
 
-@media (max-width:420px){.ln-widget{padding:8px}.ln-btn{padding:7px}}
+@media (max-width:420px){ 
 
+    .ln-widget { padding:8px 
+    } 
+    
+    .ln-btn { padding:7px }
+}
 
 .suggestions-section {
   margin: 40px 0;
