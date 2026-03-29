@@ -6,6 +6,12 @@ body {
     color: #e0e0e0; /* Light text */
 }
 
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
 /* Common styles for all sections */
 section {
     padding: 25px 20px;
