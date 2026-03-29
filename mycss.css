@@ -160,12 +160,17 @@ h3 {
 }
 
 .stories-section {
-    max-width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.story {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
-        }
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
 
     
 /* (Optional) Hide animation smooth */
