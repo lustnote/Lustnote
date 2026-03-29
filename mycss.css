@@ -606,9 +606,4 @@ h3 {
     }
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    .stories-section {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
