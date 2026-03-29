@@ -192,9 +192,7 @@ h3 {
     }
 
 /* 4. LATEST STORIES */
-.stories-section {
-    grid-template-columns: 1fr;
-}
+
 
     section {
         padding: 15px 10px;
@@ -506,12 +504,7 @@ h3 {
 
 /* Responsive */
 @media(max-width:900px) {
-  .swipe-card {flex:0 0 calc((100% / 2) - 15px);
-}
-    
-.stories-section {
-    grid-template-columns: repeat(2, 1fr);
-}
+  
     .story {
     border: 1px solid #333;
     padding: 15px;
