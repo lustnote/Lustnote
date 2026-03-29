@@ -1,6 +1,5 @@
-
 (function(){
-  const box = document.getElementById("suggestionsBox");
+  const box = document.getElementById("related-stories");
   if(!box || typeof stories === "undefined") return;
 
   const currentUrl = window.location.pathname;
