@@ -366,41 +366,9 @@ h3 {
         margin-bottom: 15px;
     }
 
-    .swipe-wrap {
-  max-width:1100px;
-  margin:20px auto;
-  padding:10px;
-  font-family:system-ui,Roboto,Arial;
-}
+    
 
-.swipe-track {
-  display:flex;
-  gap:15px;
-  overflow-x:auto;
-  scroll-snap-type:x mandatory;
-  -webkit-overflow-scrolling:touch;
-  padding:8px 4px;
-  scrollbar-width:none;
-}
-.swipe-track::-webkit-scrollbar{display:none}
 
-/* Card style */
-.swipe-card{
-  flex:0 0 calc((100% / 3) - 15px);
-  background:#0f1724;
-  color:#fff;
-  border-radius:12px;
-  border:1px solid rgba(255,255,255,0.08);
-  padding:20px 15px;
-  box-sizing:border-box;
-  scroll-snap-align:center;
-  text-align:center;
-  transition:.25s ease;
-}
-.swipe-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.45);
-}
 
 .card-title{
   font-size:20px;
@@ -459,6 +427,15 @@ h3 {
     .story {
         width: 100%;
     }
+
+    .swipe-track {
+    justify-content:center;
+    overflow:visible;
+  }
+
+  .swipe-card {
+    flex:0 0 calc((100% / 3) - 15px);
+  }
 }
 
 @media (min-width: 992px){
