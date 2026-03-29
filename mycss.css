@@ -233,38 +233,9 @@ h3 {
   color:#fff;
   text-decoration:none;
 }
-
-/* ===== SWIPE GLOBAL FIX ===== */
-.swipe-wrap {
-  max-width:1200px;
-    width:95%;
-  margin:20px auto;
-  padding:10px;
 }
 
-.swipe-track {
-  display:flex;
-  gap:15px;
-  overflow-x:auto;
-  scroll-snap-type:x mandatory;
-  -webkit-overflow-scrolling:touch;
-  scrollbar-width:none;
-}
 
-.swipe-track::-webkit-scrollbar {
-  display:none;
-}
-
-.swipe-card {
-  flex:0 0 85%;
-  min-width:85%;
-  background:#0f1724;
-  color:#fff;
-  border-radius:12px;
-  padding:20px;
-  text-align:center;
-  scroll-snap-align:center;
-}
 
 
 /* Mobile friendly */
