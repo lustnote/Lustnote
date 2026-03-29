@@ -589,17 +589,6 @@ h3 {
 }
 
 
-
-
-
-
-/* 🔥 STORIES GRID FINAL */
-
-.stories-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 /* Tablet */
 @media (max-width: 900px) {
     .stories-section {
