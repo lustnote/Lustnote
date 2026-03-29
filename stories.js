@@ -76,6 +76,16 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-03-22"
+  },
+
+  {
+    id: 9, 
+    title: "friend valla mummy tho sex",
+    desc: "naa friend gadi mummy ni dengina",
+    link: "/Lustnote/telugu/telugu-stories/friendvallamummy.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-03-30"
   }
 
   
