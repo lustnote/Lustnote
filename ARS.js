@@ -3,28 +3,29 @@
   const box = document.getElementById("related-stories");
   if(!box || typeof stories === "undefined") return;
 
-  // current page URL
-  const currentUrl = window.location.href.toLowerCase();
+  // current file name extract
+  const currentPath = window.location.pathname;
+  const currentFile = currentPath.substring(currentPath.lastIndexOf("/") + 1).toLowerCase();
 
   // find current story
-  let currentStory = stories.find(s => 
-    currentUrl.endsWith(s.link.toLowerCase())
-  );
+  let currentStory = stories.find(s => {
+    let storyFile = s.link.substring(s.link.lastIndexOf("/") + 1).toLowerCase();
+    return storyFile === currentFile;
+  });
 
-  // if not found, stop
   if(!currentStory){
     console.log("❌ Current story not found");
     return;
   }
 
-  // filter related (same category + language)
+  // filter related
   let related = stories.filter(s => 
     s.category === currentStory.category &&
     s.language === currentStory.language &&
     s.link !== currentStory.link
   );
 
-  // if less than 4, add extra
+  // if less than 4, fill extra
   if(related.length < 4){
     let extra = stories.filter(s => s.link !== currentStory.link);
     related = [...related, ...extra];
@@ -33,10 +34,9 @@
   // shuffle + pick 4
   related = related.sort(() => 0.5 - Math.random()).slice(0,4);
 
-  // clear old content
+  // render
   box.innerHTML = "";
 
-  // render cards
   related.forEach(story => {
     box.innerHTML += `
       <a href="${story.link}" class="suggest-card">
