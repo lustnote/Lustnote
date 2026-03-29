@@ -6,6 +6,10 @@ body {
     color: #e0e0e0; /* Light text */
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .container {
     max-width: 1200px;
     width: 95%;
@@ -166,11 +170,7 @@ h3 {
     color: #000;
 }
 
-.story-page {
-  max-width: 800px;
-  width: 95%;
-  margin: 20px auto;
-}
+
 
 .stories-section {
     max-width: 1200px;
