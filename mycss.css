@@ -190,6 +190,10 @@ h3 {
 .stories-section {
     grid-template-columns: 1fr;
 }
+
+    .section {
+        padding: 15px 10px;
+    }
     
 .story {
     border: 1px solid #333;
