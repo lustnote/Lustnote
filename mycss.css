@@ -175,7 +175,9 @@ h3 {
 
 /* Mobile friendly */
 @media (max-width: 600px) {
-    .search-section input[type="search"] {
+    
+    .search-section input[type="search"] 
+    {
         width: 90%;
         margin-bottom: 8px;
     }
@@ -186,7 +188,7 @@ h3 {
 
 /* 4. LATEST STORIES */
 .stories-section {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 }
     
 .story {
@@ -194,7 +196,7 @@ h3 {
     padding: 15px;
     border-radius: 5px;
     box-sizing: border-box;
-    width: 100% !important;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -274,7 +276,7 @@ h3 {
 /* 6. SOCIAL MEDIA */
 .social-section {
     text-align: center;
-    color: #;
+    color: #fff;
 }
 .social-links a {
     margin: 0 15px;
