@@ -234,6 +234,61 @@ h3 {
   text-decoration:none;
 }
 
+/* ===== GLOBAL FIX ===== */
+
+/* Fix all links */
+a {
+  text-decoration: none;
+  color: #ff6b6b;
+}
+
+a:hover {
+  color: #ffa550;
+}
+
+/* Read More Button */
+.button {
+  display: inline-block;
+  background-color: #d9534f;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Category Button */
+.button-cat {
+  display: inline-block;
+  background-color: #ffa550;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Story Titles */
+.story h4 {
+  color: #ffa550;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #ffffff !important;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: #ff6b6b !important;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #aaa;
+  padding: 12px;
+}
 
 
 
@@ -272,55 +327,7 @@ h3 {
   font-size: 20px;
 }
 
-.button-cat {
-      display: inline-block;
-      background-color: #ffa550;
-      color: #ffffff;
-      padding: 10px 20px;
-    margin: 2px;
-    
-    /* Text Style */
-    font-size: 19px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    
-    /* Shape & Interaction */
-    border: 2px solid #ffa555; /* Same as background for solid button */
-    border-radius: 5px;        /* Rounded Corners */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-      
-    }
-    
 
-.button {
-    /* Basic Look */
-    display: inline-block;
-    background-color: #d9534f; /* Main Brand Color (Red) */
-    color: #ffffff;             /* White Text */
-    /* Spacing */
-    padding: 12px 25px;
-    margin: 5px;
-    
-    /* Text Style */
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    
-    /* Shape & Interaction */
-    border: 2px solid #d9534f; /* Same as background for solid button */
-    border-radius: 5px;        /* Rounded Corners */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-}
-
-/* Hover Effect for the button */
-.button:hover {
-    background-color: #c9302c; /* Darker red on hover */
-    border-color: #c9302c;
-}
 
 /* 5. CATEGORIES */
 .categories-list {
@@ -340,50 +347,17 @@ h3 {
     font-size: 0.9em;
 }
 
-/* 6. SOCIAL MEDIA */
-.social-section {
-    text-align: center;
-    color: #fff;
-}
-.social-links a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-    font-size: 1.1em;
-}
 
-/* Social Icons ki Styling */
-.social-icons a {
-    color: #333; /* Icon default color */
-    font-size: 24px; /* Icon size */
-    margin: 0 10px; /* Icons madhyalo space */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-/* Hover chesinapudu color maradaniki */
-.social-icons a:hover {
-    color: #d9534f; /* Mana brand color */
-}
+
 
 /* Read More button lo unna icon ki style */
 .read-more-btn i {
     margin-left: 8px; /* text ki, icon ki madhyalo space */
 }
 
-/* 7. FOOTER */
 
-.site-footer {
-    text-align: center;
-    background-color: #1f1f1f;
-    color: #aaa;
-    padding: 3px;
-    margin-top: 3px;
-    border-top: 1px solid #333;
-}
-}
-/* --------------------------------- */
+
 /* --- RESPONSIVE & MENU LOGIC --- */
 /* --------------------------------- */
 
