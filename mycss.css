@@ -161,8 +161,9 @@ h3 {
 }
 
 .stories-section {
-    max-width: 900px;
-    margin: auto;
+    max-width: 1200px;
+    width: 95%;
+    margin: 20px auto;
 }
 
 .story {
@@ -186,7 +187,8 @@ h3 {
 
 /* ===== SWIPE GLOBAL (IMPORTANT) ===== */
 .swipe-wrap {
-  max-width:1100px;
+  max-width:1200px;
+    width: 95%;
   margin:20px auto;
   padding:10px;
 }
@@ -228,7 +230,8 @@ h3 {
 
 /* ===== SWIPE GLOBAL FIX ===== */
 .swipe-wrap {
-  max-width:1100px;
+  max-width:1200px;
+    width:95%;
   margin:20px auto;
   padding:10px;
 }
