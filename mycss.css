@@ -178,6 +178,54 @@ h3 {
     opacity: 0;
 }
 
+.tag-category {
+    background: #ffa550;
+    color: #000;
+}
+
+/* ===== SWIPE GLOBAL (IMPORTANT) ===== */
+.swipe-wrap {
+  max-width:1100px;
+  margin:20px auto;
+  padding:10px;
+}
+
+.swipe-track {
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+}
+
+.swipe-card {
+  flex:0 0 85%;
+  background:#0f1724;
+  color:#fff;
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+}
+
+.card-title {
+  font-size:20px;
+  font-weight:700;
+}
+
+.card-desc {
+  font-size:14px;
+  color:#9fb0c6;
+}
+
+.card-btn {
+  display:inline-block;
+  background:#ff6b6b;
+  padding:8px 14px;
+  border-radius:8px;
+  color:#fff;
+  text-decoration:none;
+}
+
+
 /* Mobile friendly */
 @media (max-width: 600px) {
     
