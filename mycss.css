@@ -330,7 +330,6 @@ h3 {
 
 
 
-/* --- DESKTOP --- */
 @media (max-width: 768px) {
     /* Mobile lo, Menu Button chupinchu */
     .menu-button {
@@ -446,6 +445,9 @@ h3 {
     }
 }
 
+
+/* DESKTOP */
+@media (min-width: 768px) {
     .stories-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -458,7 +460,6 @@ h3 {
         width: 100%;
     }
 }
-
 
 @media (min-width: 992px){
 
