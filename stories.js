@@ -86,6 +86,16 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-03-30"
+  },
+
+  {
+    id: 10, 
+    title: "US velina bava intlo unde akka tho dengulata",
+    desc: "maa bava US ki job kosam veladu ma intlone unde akka nenu sex cheskunam",
+    link: "/Lustnote/telugu/akkathamudustory2.html",
+    category: "akka",
+    language: "telugu",
+    date: "2025-04-05"
   }
 
   
