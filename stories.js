@@ -96,6 +96,16 @@ const stories = [
     category: "akka",
     language: "telugu",
     date: "2025-04-05"
+  },
+
+  {
+    id: 11, 
+    title: "vadhina tho naa tholi anubhavam",
+    desc: "ma anna valla wife naa vadhina tho naa tholi sex anubhavam",
+    link: "/Lustnote/telugu/vadhinastory1.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2025-04-09"
   }
 
   
