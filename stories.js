@@ -106,7 +106,20 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2025-04-09"
+  },
+
+
+  
+  {
+    id: 12, 
+    title: "telugu vadhina categories",
+    desc: "telugu vadhina categories list",
+    link: "/Lustnote/telugu/vadhinacat.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-03-22"
   }
+  
 
   
 ];
