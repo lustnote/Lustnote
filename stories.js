@@ -117,7 +117,17 @@ const stories = [
     link: "/Lustnote/telugu/vadhinacat.html",
     category: "vadhina",
     language: "telugu",
-    date: "2026-03-22"
+    date: "2026-04-09"
+  },
+
+  {
+    id: 12, 
+    title: "sruthi vadhina intiki pilichi denginchukuntundi part 1",
+    desc: "ma vadhina nanu intiki pilichi yella denginchukuntundi anedhi ee story part 1",
+    link: "/Lustnote/telugu/vadhinastory2.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-04-10"
   }
   
 
