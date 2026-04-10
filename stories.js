@@ -121,14 +121,25 @@ const stories = [
   },
 
   {
-    id: 12, 
+    id: 13, 
     title: "sruthi vadhina intiki pilichi denginchukuntundi part 1",
     desc: "ma vadhina nanu intiki pilichi yella denginchukuntundi anedhi ee story part 1",
     link: "/Lustnote/telugu/vadhinastory2.html",
     category: "vadhina",
     language: "telugu",
     date: "2026-04-10"
-  }
+  },
+
+  
+  {
+    id: 14, 
+    title: "Panimanishi tho na life story part 1",
+    desc: "Apudu ma amma ki 37 years housewife. Ame chala telaga inka andam ga untundi. Nenu amma chala close vala ame chala sarlu na mundhu part 1",
+    link: "/Lustnote/telugu/panimanishistory1part1.html",
+    category: "panimanishi",
+    language: "telugu",
+    date: "2026-04-11"
+}
   
 
   
