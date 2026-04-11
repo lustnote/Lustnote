@@ -150,7 +150,18 @@ const stories = [
     category: "panimanishi",
     language: "telugu",
     date: "2026-04-11"
-    }
+    },
+
+  
+  {
+    id: 16, 
+    title: "unsatisfied room owner aunty",
+    desc: "naa room owner aunty nee dengi satisfy chesa read full story.",
+    link: "/Lustnote/telugu/roomownerauntystory1.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-12"
+  }
 
   
   
