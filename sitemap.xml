@@ -1,153 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  
   <url>
     <loc>https://lustnote.github.io/Lustnote/index.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
 
   <url>
-  <loc>https://lustnote.github.io/Lustnote/contactus.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.5</priority>
-</url>
+    <loc>https://lustnote.github.io/Lustnote/contactus.html</loc>
+  </url>
 
-<url>
-  <loc>https://lustnote.github.io/Lustnote/about.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.5</priority>
-</url>
-
-<url>
-  <loc>https://lustnote.github.io/Lustnote/P&amp;p.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.5</priority>
-</url>
-
- 
   <url>
-    <loc>https://lustnote.github.io/Lustnote/telugu/story1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://lustnote.github.io/Lustnote/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lustnote.github.io/Lustnote/P&amp;p.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lustnote.github.io/Lustnote/telugu/story1</loc>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/story2-telugu.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/story3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/story4-telugu-akka-thamudu.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
-
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/Cat/category.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/telugu-aunty-category.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
-  
   <url>
     <loc>https://lustnote.github.io/Lustnote/hindi/hindi-home.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/telugu-category-list.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>           
+  </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/gf-category.html</loc>
-   <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/hindi/hindi-story1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/gymaunty.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/telugu-stories/vineethagf.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/friendvallamummy.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/akkathamudustory2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/vadhinastory1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/vadhinacat.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/vadhinastory2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/panimanishistory1part1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/panimanishicatlist.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lustnote.github.io/Lustnote/telugu/panimanishistory1part2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
-  
+
 </urlset>
