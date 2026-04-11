@@ -117,48 +117,89 @@
 
       
 
-      <h3>🔥 Latest Telugu Stories</h3>
+  <h3>🔥 Latest Telugu Stories</h3>
+
 <ul id="latest-stories"></ul>
 
+<!-- STORIES JS -->
 <script src="/Lustnote/stories.js"></script>
 
+<!-- STYLE -->
+<style>
+#latest-stories {
+  list-style: none;
+  padding: 0;
+}
+
+#latest-stories li {
+  background: #1a1a1a;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#latest-stories li:hover {
+  background: #222;
+  transform: scale(1.02);
+}
+
+#latest-stories a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#latest-stories p {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.new-badge {
+  background: #ff4757;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+</style>
+
+<!-- SCRIPT -->
 <script>
-  const container = document.getElementById("latest-stories");
+const container = document.getElementById("latest-stories");
 
-  // ✅ Only Telugu stories filter
-  const teluguStories = stories.filter(story => story.language === "telugu");
+// ✅ Only Telugu stories
+const teluguStories = stories.filter(story => story.language === "telugu");
 
-  // ✅ Sort by latest date (new first)
-  const sortedStories = teluguStories.sort((a, b) => new Date(b.date) - new Date(a.date));
+// ✅ Sort latest first
+const sortedStories = teluguStories.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  // ✅ Top 5 latest stories
-  const latestStories = sortedStories.slice(0, 5);
+// ✅ Top 5
+const latestStories = sortedStories.slice(0, 5);
 
-  const today = new Date();
+const today = new Date();
 
-  // ✅ Display
-  latestStories.forEach(story => {
-    const storyDate = new Date(story.date);
-    const diffDays = (today - storyDate) / (1000 * 60 * 60 * 24);
+latestStories.forEach(story => {
+  const storyDate = new Date(story.date);
+  const diffDays = (today - storyDate) / (1000 * 60 * 60 * 24);
 
-    // 🆕 New badge (3 days lopu)
-    const isNew = diffDays <= 3 ? " 🆕" : "";
+  const isNew = diffDays <= 3 ? '<span class="new-badge">NEW</span>' : '';
 
-    const li = document.createElement("li");
+  const li = document.createElement("li");
 
-    li.innerHTML = `
-      <a href="${story.link}" style="text-decoration:none;color:white;">
-        🔥 ${story.title}${isNew}
-      </a>
-      <p style="font-size:12px;color:gray;margin:2px 0 10px;">
-        ${story.desc}
-      </p>
-    `;
+  li.innerHTML = `
+    <a href="${story.link}">
+      🔥 ${story.title} ${isNew}
+    </a>
+    <p>${story.desc}</p>
+  `;
 
-    container.appendChild(li);
-  });
+  container.appendChild(li);
+});
 </script>
-
       
 
 
