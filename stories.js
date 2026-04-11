@@ -139,7 +139,20 @@ const stories = [
     category: "panimanishi",
     language: "telugu",
     date: "2026-04-11"
-}
+},
+
+
+    {
+    id: 15, 
+    title: "Panimanishi tho na life story part 2",
+    desc: "hello prnds mundhu naa part 1 story chadhivaru anukuntuna ledha miku koncham confusion untadhi kani story lo sex mathram mamoluga ledhu asalu sex antey ellane undali..",
+    link: "/Lustnote/telugu/panimanishistory1part2.html",
+    category: "panimanishi",
+    language: "telugu",
+    date: "2026-04-11"
+    }
+
+  
   
 
   
