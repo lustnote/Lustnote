@@ -106,6 +106,61 @@
     </div>
 
 
+      
+      
+<!-- JuicyAds v3.0 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="1107724" data-width="308" data-height="286"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1107724});</script>
+<!--JuicyAds END-->
+
+
+      
+
+      <h3>🔥 Latest Telugu Stories</h3>
+<ul id="latest-stories"></ul>
+
+<script src="/Lustnote/stories.js"></script>
+
+<script>
+  const container = document.getElementById("latest-stories");
+
+  // ✅ Only Telugu stories filter
+  const teluguStories = stories.filter(story => story.language === "telugu");
+
+  // ✅ Sort by latest date (new first)
+  const sortedStories = teluguStories.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // ✅ Top 5 latest stories
+  const latestStories = sortedStories.slice(0, 5);
+
+  const today = new Date();
+
+  // ✅ Display
+  latestStories.forEach(story => {
+    const storyDate = new Date(story.date);
+    const diffDays = (today - storyDate) / (1000 * 60 * 60 * 24);
+
+    // 🆕 New badge (3 days lopu)
+    const isNew = diffDays <= 3 ? " 🆕" : "";
+
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+      <a href="${story.link}" style="text-decoration:none;color:white;">
+        🔥 ${story.title}${isNew}
+      </a>
+      <p style="font-size:12px;color:gray;margin:2px 0 10px;">
+        ${story.desc}
+      </p>
+    `;
+
+    container.appendChild(li);
+  });
+</script>
+
+      
+
 
         
         <section class="social-section">
