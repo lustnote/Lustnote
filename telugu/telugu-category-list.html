@@ -145,7 +145,7 @@
   margin-bottom: 14px;
   padding: 14px;
   border-radius: 12px;
-  border: 1px solid #ff7a00;
+  border: 1px solid #ff7a0;
   box-shadow: 0 0 10px rgba(255,122,0,0.15);
   transition: 0.3s;
 }
@@ -204,14 +204,14 @@ latestStories.forEach(story => {
   const storyDate = new Date(story.date);
   const diffDays = (today - storyDate) / (1000 * 60 * 60 * 24);
 
-  // 🔥 NEW badge (3 days)
+  //  NEW badge (3 days)
   const isNew = diffDays <= 3 ? '<span class="new-badge">NEW</span>' : '';
 
   const li = document.createElement("li");
 
   li.innerHTML = `
     <a href="${story.link}">
-      🔥 ${story.title} ${isNew}
+       ${story.title} ${isNew}
     </a>
     <p>${story.desc}</p>
   `;
