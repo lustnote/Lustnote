@@ -139,6 +139,18 @@ Appudu nenu engineering 2nd year. First year lo naku oka gf unde, epudu tana tho
              </div>
         </section>
 
+        <!-- TELUGU -->
+<section class="stories-section">
+<h1>🔥 Latest Telugu Stories</h1>
+<div class="stories-container" id="teluguStoriesContainer"></div>
+</section>
+
+<!-- HINDI -->
+<section class="stories-section">
+<h1>💙 Latest Hindi Stories</h1>
+<div class="stories-container" id="hindiStoriesContainer"></div>
+</section>
+
 
 <br>
         <section class="categories-section">
@@ -192,7 +204,39 @@ Appudu nenu engineering 2nd year. First year lo naku oka gf unde, epudu tana tho
     <script src="myjs.js"></script>
     <script src="stories.js"></script>
     
+<script>
+// 🔥 GET LATEST STORIES
+function getLatestStories(language) {
+return stories
+.filter(s => s.language === language)
+.sort((a,b) => new Date(b.date) - new Date(a.date))
+.slice(0,4);
+}
 
+// 🔥 RENDER
+function renderStories(id, list) {
+const container = document.getElementById(id);
+if (!container) return;
+
+container.innerHTML = "";
+
+list.forEach(story => {
+container.innerHTML += `
+<article class="story">
+<h4>${story.title}</h4>
+<p>${story.desc}</p>
+<a href="${story.link}" class="button">Read More</a>
+</article>
+<br>
+`;
+});
+}
+
+// CALL
+renderStories("teluguStoriesContainer", getLatestStories("telugu"));
+renderStories("hindiStoriesContainer", getLatestStories("hindi"));
+
+</script>
     
 </body>
 </html>
