@@ -161,6 +161,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-04-12"
+  },
+
+
+  {
+    id: 16, 
+    title: "Hyderabad Asma aunty ni kasiteera dengaanu",
+    desc: "tholam bangaaram, Story loki vaste Asma Hyderabad married girl. 30 28 32, chamanchi rangu but looking good. Ela ayina Muslim girl dengali anna na korika teerindi.",
+    link: "/Lustnote/telugu/hydasmastory1.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-12"
   }
 
   
