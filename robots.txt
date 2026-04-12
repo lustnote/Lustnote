@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap: https://lustnote.github.io/Lustnote/sitemap.xml
+Sitemap: https://lustnote.github.io/Lustnote/sitemap.xml
