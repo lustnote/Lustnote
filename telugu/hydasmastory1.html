@@ -580,12 +580,20 @@ Nakinchukune vallu vundali kani entha sepu anna nakutha. haha adhi na balahinath
     <!-- 🔥 Button -->
     <a href="../telugu/telugu-category-list.html" 
        class="button-cat" 
-       onclick="openAd()">Load More</a>
+       onclick="openAdAndGo(event)">Load More</a>
 </section>
 
 <script>
-function openAd() {
+function openAdAndGo(e) {
+    e.preventDefault();
+
+    // open ad in new tab
     window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
+
+    // delay and then go to category page
+    setTimeout(function(){
+        window.location.href = "../telugu/telugu-category-list.html";
+    }, 800);
 }
 </script>
 
