@@ -165,14 +165,24 @@ const stories = [
 
 
   {
-    id: 16, 
+    id: 17, 
     title: "Hyderabad Asma aunty ni kasiteera dengaanu",
     desc: "tholam bangaaram, Story loki vaste Asma Hyderabad married girl. 30 28 32, chamanchi rangu but looking good. Ela ayina Muslim girl dengali anna na korika teerindi.",
     link: "/Lustnote/telugu/hydasmastory1.html",
     category: "aunty",
     language: "telugu",
     date: "2026-04-12"
-  }
+  },
+
+    {
+    id: 18, 
+    title: "Tanvi madam chudai hindi story 2",
+    desc: "corporate company tanvi madam chudai.",
+    link: "/Lustnote/hindi/tanvi-madam-hindi-story2.html",
+    category: "aunty",
+    language: "hindi",
+    date: "2026-04-15"
+    }
 
   
   
