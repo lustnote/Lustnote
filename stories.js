@@ -182,7 +182,18 @@ const stories = [
     category: "aunty",
     language: "hindi",
     date: "2026-04-15"
-    }
+    },
+
+
+      {
+    id: 19, 
+    title: "Train lo meet aina strangers aunty tho sex chesa.",
+    desc: "Nenu naa seat daggara settle avuthunna time lo oka aunty kanipinchindi. Side berth seats ma iddarivi window pakkana kurchundi face lo tiredness, dull ga vundhi..",
+    link: "/Lustnote/telugu/stranger-aunty-telugu-story.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-15"
+      }
 
   
   
