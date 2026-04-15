@@ -214,7 +214,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-04-15"
-  }
+  },
+
+    {
+    id: 22, 
+    title: "Insta lo parichayam ayina aunty tho dengudu.",
+    desc: "Online lo conenct ayina married lady tho ela parichayam perigindi. Memu iddaram entha baga close ayyi ela enjoy chesamo ee telugu sex katha.",
+    link: "/Lustnote/telugu/insta-aunty-telugu.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-16"
+    }
 
   
   
