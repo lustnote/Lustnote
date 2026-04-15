@@ -95,7 +95,7 @@ const stories = [
     link: "/Lustnote/telugu/akkathamudustory2.html",
     category: "akka",
     language: "telugu",
-    date: "2025-04-05"
+    date: "2026-04-05"
   },
 
   {
@@ -105,7 +105,7 @@ const stories = [
     link: "/Lustnote/telugu/vadhinastory1.html",
     category: "vadhina",
     language: "telugu",
-    date: "2025-04-09"
+    date: "2026-04-09"
   },
 
 
@@ -203,7 +203,7 @@ const stories = [
     link: "/Lustnote/telugu/swathi-vadhina-telugu-story-part1.html",
     category: "vadhina",
     language: "telugu",
-    date: "2025-04-15"
+    date: "2026-04-15"
     }
 
   
