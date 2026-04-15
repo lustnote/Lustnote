@@ -204,7 +204,17 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-04-15"
-    }
+    },
+
+  {
+    id: 21, 
+    title: "Marwadi aunty tho marchipoleni Anubhuti.",
+    desc: "Online lo parchiyam ayina marwadi aunty tho offline lo ela enjoy chesa anedi ee story. Adi eni twists ki daari teesindo chadivi telusukondi.",
+    link: "/Lustnote/telugu/marwadi-aunty-telugu-story-part1.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-15"
+  }
 
   
   
