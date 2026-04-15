@@ -193,7 +193,18 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-04-15"
-      }
+      },
+
+
+    {
+    id: 20, 
+    title: "Swathi Vadhina Puku Lo swargam Part 1.",
+    desc: "Adiripoye figure vadina tho kalsi unexpected ga ela oka night spend chesano. Tanani ela dengi sukapettano rastunna chadivi enjoy cheyyandi.",
+    link: "/Lustnote/telugu/swathi-vadhina-telugu-story-part1.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2025-04-15"
+    }
 
   
   
