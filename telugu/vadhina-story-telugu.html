@@ -556,15 +556,27 @@ Unsatisfied ladies and satisfy cheyaleni husbands, or cuckold husbands. Nenu vun
         
     </ul>
     
-    <!-- 🔥 Button -->
+        <!-- 🔥 Button -->
     <a href="../telugu/telugu-category-list.html" 
-       class="button-cat" 
-       onclick="openAd()">Load More</a>
+   class="button-cat" 
+   onclick="openAdAndGo(event, this.href)">Load More</a>
 </section>
 
+  
 <script>
-function openAd() {
-    window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
+function openAdAndGo(e, url) {
+    e.preventDefault();
+
+    // try opening ad
+    let adWindow = window.open(
+        "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
+        "_blank"
+    );
+
+    // fallback: if blocked, still continue
+    setTimeout(function(){
+        window.location.href = url;
+    }, 500);
 }
 </script>
 
