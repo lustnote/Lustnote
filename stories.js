@@ -234,6 +234,16 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-04-25"
+  },
+
+    {
+    id: 21, 
+    title: "Omegle lo married aunty tho parichayam.",
+    desc: "Dating sites lo aunty tho wild ga webcam sex chesanu. Iddaram full kasi tho nude ga video call chesthu okarini okaram kasi ga satisfy cheskunnam.",
+    link: "/Lustnote/telugu/omegle-married-telugu-aunty.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-26"
   }
 
   
