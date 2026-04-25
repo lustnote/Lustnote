@@ -224,7 +224,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-04-16"
-    }
+    },
+
+    {
+    id: 23, 
+    title: "Vadhina gudda seal open chesanu.",
+    desc: "Vadina puku dengina tarvatha, kasi ga malli dengichukotaki vachindi. Ee sari oil posi puku tho patu virgin gudda ni ela dengano chadavandi.",
+    link: "/Lustnote/telugu/vadhina-story-telugu.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-04-25"
+  }
 
   
   
