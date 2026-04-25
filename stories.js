@@ -237,7 +237,7 @@ const stories = [
   },
 
     {
-    id: 21, 
+    id: 24, 
     title: "Omegle lo married aunty tho parichayam.",
     desc: "Dating sites lo aunty tho wild ga webcam sex chesanu. Iddaram full kasi tho nude ga video call chesthu okarini okaram kasi ga satisfy cheskunnam.",
     link: "/Lustnote/telugu/omegle-married-telugu-aunty.html",
