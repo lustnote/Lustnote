@@ -462,35 +462,61 @@ updateUI();
 </script>
 
 
-	<script>
+	<script src="/Lustnote/stories.js"></script>
+
+<script>
 
 const input = document.getElementById("searchInput");
 const results = document.getElementById("searchResults");
 
 input.addEventListener("keyup", () => {
 
-  let value = input.value.toLowerCase();
+  let value = input.value.toLowerCase().trim();
   results.innerHTML = "";
 
   if (value === "") return;
 
-  let filtered = stories.filter(s => 
+  let filtered = stories.filter(s =>
     s.title.toLowerCase().includes(value)
   );
 
+  if (filtered.length === 0) {
+    results.innerHTML = "<li style='padding:10px;color:#888'>No results found</li>";
+    return;
+  }
+
   filtered.forEach(s => {
+
     let li = document.createElement("li");
 
-    li.innerHTML = `<a href="${s.url}">${s.title}</a>`;
-    li.classList.add("result-item");
+    li.innerHTML = `
+      <a href="${s.link}" style="
+        display:block;
+        padding:12px;
+        border-radius:12px;
+        background:#111827;
+        margin-bottom:8px;
+        color:#facc15;
+        text-decoration:none;
+      ">
+        ${highlight(s.title, value)}
+      </a>
+    `;
 
     results.appendChild(li);
   });
 
 });
 
-	</script>
+// 🔥 highlight typed text
+function highlight(text, keyword) {
+  const regex = new RegExp(`(${keyword})`, "gi");
+  return text.replace(regex, `<b style="color:white">$1</b>`);
+}
 
-<script src="../../stories.js"></script>
+</script>
+	
+
+
 </body>
 </html>
