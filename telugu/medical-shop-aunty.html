@@ -994,9 +994,9 @@ input.addEventListener("focus", () => {
 <script>
 const currentPath = window.location.pathname;
 
-// same category match (optional)
+// 🔍 current story find
 function getCurrentStory() {
-  return stories.find(s => currentPath.includes(s.link)) || stories[0];
+  return stories.find(s => currentPath.includes(s.link)) || null;
 }
 
 function loadRelated() {
@@ -1005,10 +1005,12 @@ function loadRelated() {
   if (!container) return;
 
   let current = getCurrentStory();
+  if (!current) return;
 
+  // ✅ ONLY SAME CATEGORY
   let filtered = stories.filter(s => {
-    return s.link !== current?.link &&
-           (s.category === current?.category || s.language === current?.language);
+    return s.link !== current.link &&
+           s.category === current.category;
   });
 
   // shuffle
@@ -1022,7 +1024,8 @@ function loadRelated() {
   selected.forEach(s => {
 
     let card = document.createElement("a");
-    card.href = window.location.origin + s.link;
+    card.href = "#";
+
     card.className = "group glass rounded-2xl p-5 transition-all hover:-translate-y-1";
 
     card.innerHTML = `
@@ -1031,13 +1034,26 @@ function loadRelated() {
       <p class="text-xs text-muted-foreground mt-1">${s.date}</p>
     `;
 
+    // 💰 SMARTLINK + REDIRECT
+    card.onclick = function(e) {
+      e.preventDefault();
+
+      window.open(
+        "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
+        "_blank"
+      );
+
+      setTimeout(() => {
+        window.location.href = window.location.origin + s.link;
+      }, 800);
+    };
+
     container.appendChild(card);
   });
 }
 
-// run after page load
+// 🚀 RUN
 loadRelated();
-
 </script>
 
 
