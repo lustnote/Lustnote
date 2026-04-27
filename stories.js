@@ -244,6 +244,16 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-04-26"
+  },
+
+  {
+    id: 25, 
+    title: "Medical Shop Aunty Story Telugu Part 1.",
+    desc: "Ma area lo unde kathi lanti Kosalya aunty ni entha kasi ga denga. Tana birthday roju ela surprise chesi night antha degano ee katha lo rasa..",
+    link: "/Lustnote/telugu/medical-shop-aunty.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-28"
   }
 
   
