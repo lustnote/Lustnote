@@ -1,0 +1,608 @@
+/* Basic Setup - DARK THEME */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212; /* Main dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Common styles for all sections */
+section {
+    padding: 25px 20px;
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+/* 1. NAVBAR */
+.site-header {
+    background-color: #1f1f1f;
+    padding: 15px 30px;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.site-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #FFA550;
+}
+
+.menu-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none; /* Desktop lo hide chestham */
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* 2. SLOGAN */
+.slogan-section {
+    text-align: center;
+    background-color: #2a2a2a;
+}
+.slogan-section h2 {
+    color: #f5f5f5;
+    font-style: italic;
+}
+
+/* 3. SEARCH BOX */
+.search-section {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.search-section input[type="search"] {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-section button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+
+#search-results {
+    max-width: 1000px;
+    width:90%;
+    margin: 12px auto; 
+    position: relative;
+    z-index: 1; 
+    background: #1e1e1e; 
+    border-radius: 8px; 
+    display: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  }
+
+.search-item {
+    padding: 14px 16px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    display:block;
+    flex-direction: column;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.search-item:last-child {
+    border-bottom: none;
+}
+
+.search-tags {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+/* 🔥 IMPORTANT FIX */
+.search-tag {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;   /* stop stretching */
+    width: auto;             /* content width only */
+    max-width: fit-content;
+    white-space: nowrap;     /* single line */
+}
+    
+
+
+
+.tag-story {
+    background: #007BFF;
+    color: #fff;
+}
+
+.tag-category {
+    background: #ffa550;
+    color: #000;
+}
+
+
+
+.stories-section {
+    max-width: 1200px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.story {
+    width: 100%;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+    
+/* (Optional) Hide animation smooth */
+.story[style*="none"] {
+    opacity: 0;
+}
+
+.tag-category {
+    background: #ffa550;
+    color: #000;
+}
+
+/* ===== SWIPE GLOBAL (IMPORTANT) ===== */
+.swipe-wrap {
+  max-width:1200px;
+    width: 95%;
+  margin:20px auto;
+  padding:10px;
+}
+
+.swipe-track {
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+}
+
+.swipe-card {
+  flex:0 0 85%;
+  background:#0f1724;
+  color:#fff;
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+}
+
+.card-title {
+  font-size:20px;
+  font-weight:700;
+}
+
+.card-desc {
+  font-size:14px;
+  color:#9fb0c6;
+}
+
+.card-btn {
+  display:inline-block;
+  background:#ff6b6b;
+  padding:8px 14px;
+  border-radius:8px;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* ===== GLOBAL FIX ===== */
+
+/* Fix all links */
+a {
+  text-decoration: none;
+  color: #ff6b6b;
+}
+
+a:hover {
+  color: #ffa550;
+}
+
+/* Read More Button */
+.button {
+  display: inline-block;
+  background-color: #d9534f;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Category Button */
+.button-cat {
+  display: inline-block;
+  background-color: #ffa550;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Story Titles */
+.story h4 {
+  color: #ffa550;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #ffffff !important;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: #ff6b6b !important;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #aaa;
+  padding: 12px;
+}
+
+
+
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+    
+    .search-section input[type="search"] 
+    {
+        width: 90%;
+        margin-bottom: 8px;
+    }
+
+    .search-section button {
+        width: 90%;
+    }
+
+/* 4. LATEST STORIES */
+
+
+    section {
+        padding: 15px 10px;
+    }
+    
+.story {
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+
+.story h4 {
+  color: orange;
+  font-size: 20px;
+}
+
+
+
+/* 5. CATEGORIES */
+.categories-list {
+    list-style: none;
+    color: #ffa550;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.categories-list li {
+    background-color: #333;
+    color: #ffa550;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+
+
+
+
+/* Read More button lo unna icon ki style */
+.read-more-btn i {
+    margin-left: 8px; /* text ki, icon ki madhyalo space */
+}
+
+
+
+/* --- RESPONSIVE & MENU LOGIC --- */
+/* --------------------------------- */
+
+
+
+
+@media (max-width: 768px) {
+    /* Mobile lo, Menu Button chupinchu */
+    .menu-button {
+        display: block;
+    }
+
+    
+    /* Mobile lo, links hide cheyi */
+    .nav-links {
+        display: none; /* Important: Default ga hide */
+        position: absolute;
+        top: 65px; /* Navbar kindha */
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px solid #333;
+    }
+    
+    .nav-links.active {
+        display: flex; /* JS idi add chesthe, menu kanipistundi */
+    }
+    
+    .nav-links a {
+        margin: 15px 0; /* Links kindha kindhaki */
+    }
+
+    /* Mobile lo stories okati kindha okati */
+    
+    .story {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .swipe-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.swipe-arrow{
+  position:relative;
+  top:50%;
+  background:rgba(0,0,0,0.45);
+  color:#fff;
+  padding:8px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  user-select:none;
+  margin:0 5px;
+}
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .stories-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .story {
+        width: 100%;
+    }
+
+    .swipe-track {
+    justify-content:center;
+    overflow:visible;
+  }
+
+  .swipe-card {
+    flex:0 0 calc((100% / 3) - 15px);
+  }
+}
+
+@media (min-width: 992px){
+
+  .swipe-track{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    overflow:visible;
+  }
+
+  .swipe-card{
+    width:320px;
+    background:linear-gradient(145deg,#0b1220,#121a2e);
+    border-radius:18px;
+    padding:28px 22px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+    transition:all .3s ease;
+    text-align:center;
+  }
+
+  .swipe-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 30px 60px rgba(0,0,0,0.7);
+  }
+
+  .card-title{
+    font-size:22px;
+    font-weight:800;
+    color:#ffffff;
+    margin-bottom:10px;
+  }
+
+  .card-desc{
+    font-size:15px;
+    color:#cfd6de;
+    line-height:1.6;
+    margin-bottom:20px;
+  }
+
+  .card-btn{
+    display:inline-block;
+    padding:12px 26px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#ff6b6b,#ff9068);
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+    transition:all .25s ease;
+  }
+
+  .card-btn:hover{
+    background:linear-gradient(135deg,#ff9068,#ff6b6b);
+    transform:scale(1.05);
+  }
+
+  /* hide arrows on desktop (optional) */
+  .swipe-arrow{
+    display:none;
+  }
+    
+      }
+
+/* Responsive */
+@media(max-width:900px) {
+  
+    .story {
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+
+.story h4 {
+  color: orange;
+  font-size: 20px;
+}
+
+    
+}
+
+@media(max-width:480px){
+  .swipe-card{flex:0 0 90%;}
+  .swipe-arrow{display:none;} /* hide arrows on small screens */
+}
+/* LustNote like/dislike widget - paste into head or CSS file */
+.ln-widget{max-width:560px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:10px;display:flex;gap:12px;align-items:center;font-family:system-ui,Roboto,sans-serif}
+.ln-info{flex:1}
+.ln-counts{display:flex;gap:8px;align-items:center}
+.ln-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);cursor:pointer;user-select:none;background:rgba(255,255,255,0.01);color:#fff}
+.ln-btn:hover{transform:translateY(-2px)}
+.ln-btn.active{box-shadow:0 6px 18px rgba(0,0,0,0.45);border-color:rgba(255,255,255,0.06)}
+.ln-btn .ico{font-weight:700}
+.ln-views{margin-left:auto;font-size:13px;color:#9fb0c6}
+.ln-small{font-size:13px;color:#9fb0c6;margin-top:6px}
+.pop{transform:scale(1.08);transition:transform .12s ease}
+
+
+@media (max-width:420px){ 
+
+    .ln-widget { padding:8px 
+    } 
+    
+    .ln-btn { padding:7px }
+}
+
+.suggestions-section {
+  margin: 40px 0;
+}
+
+.suggestions-section h3 {
+  color: #ffa550;
+  margin-bottom: 15px;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.suggest-card {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+}
+
+.suggest-card:hover {
+  transform: translateY(-4px);
+}
+
+.suggest-card h4 {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.suggest-card p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.suggest-tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #007BFF;
+  margin-bottom: 6px;
+}
+
