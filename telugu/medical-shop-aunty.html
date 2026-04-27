@@ -551,7 +551,6 @@ And aunty ichina condoms and lubricants and i pills ichindhi.
     
     <div class="mt-10 flex flex-wrap gap-2">
       
-    <div id="exploreStories" class="mt-8"></div>
       
     <span class="rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-foreground/80 hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">#<!-- -->Telugu</span>
     
@@ -566,7 +565,8 @@ And aunty ichina condoms and lubricants and i pills ichindhi.
     <span class="rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-foreground/80 hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">#<!-- -->Romance</span>
     </div>
     
-    <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl glass p-5 sm:p-6"><div><p class="text-xs uppercase tracking-wider text-primary font-semibold">Next Chapter</p><p class="font-display text-lg mt-1">First meet — Banjara Hills cafe</p>
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl glass p-5 sm:p-6">
+		<div><p class="text-xs uppercase tracking-wider text-primary font-semibold">Next Chapter</p><p class="font-display text-lg mt-1">First meet — Banjara Hills cafe</p>
     </div>
     
     <button class="group inline-flex items-center gap-2 rounded-xl bg-gradient-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.03] active:scale-[0.97]">Continue<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="transition-transform group-hover:translate-x-0.5">
@@ -1031,49 +1031,7 @@ loadRelated();
 
 </script>
 
-<!-- auto different caty suggestions stories -->
-<script>
-  function loadExploreStories() {
 
-  const container = document.getElementById("exploreStories");
-  if (!container) return;
-
-  const categories = ["girlfriend", "vadhina", "akka", "panimanishi"];
-
-  let html = `
-    <h3 style="margin-bottom:10px;">🔥 Explore More</h3>
-  `;
-
-  categories.forEach(cat => {
-
-    let filtered = stories.filter(s => s.category === cat);
-
-    if (filtered.length > 0) {
-      let random = filtered[Math.floor(Math.random() * filtered.length)];
-
-      html += `
-        <a href="${window.location.origin + random.link}" 
-           style="display:block;background:#111827;padding:12px;border-radius:10px;margin-bottom:10px;">
-
-          <div style="color:#facc15;font-size:11px;text-transform:uppercase;">
-            ${cat}
-          </div>
-
-          <div style="color:white;font-weight:600;">
-            ${random.title}
-          </div>
-
-        </a>
-      `;
-    }
-
-  });
-
-  container.innerHTML = html;
-}
-
-loadExploreStories();
-</script>
 
 
 </body>
