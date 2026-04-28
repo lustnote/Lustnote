@@ -254,6 +254,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-04-28"
+  },
+
+  
+  {
+    id: 26, 
+    title: "Temple lo chusina aunty tho sexy friendship.",
+    desc: "Nenu appudappudu gudiki velthunta. Akkada nenu chusina aunty tho friendship chesi valla intlo tanatho ela sex chesano ee story lo chadavandi.",
+    link: "/Lustnote/telugu/temple-aunty-telugu.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-04-29"
   }
 
   
