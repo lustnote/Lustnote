@@ -157,16 +157,16 @@
 }
 
 
-.prose-story p::first-letter {
-  all: unset;
+.prose-story p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+  text-align: left;
+  word-break: break-word;
 }
 
-	.prose-story {
+.prose-story {
   font-size: 16px;
-}
-
-.prose-story p::first-letter {
-  all: unset;
+  letter-spacing: 0.2px;
 }
 	
 </style>
@@ -181,7 +181,7 @@
   <!--$-->
 
 <div class="min-h-screen bg-gradient-hero">
-<div class="fixed top-0 left-0 right-0 z-50 h-[3px] bg-transparent">
+<div class="fixed top-0 left-0 right-0 z-50 h-[3x] bg-transparent">
 <div class="h-full bg-gradient-primary shadow-glow transition-[width] duration-150" style="width: 0%;">
   
 </div>
@@ -1341,15 +1341,25 @@ function openAd() {
 <script id="0j9m1z">
 function unlockStory() {
 
-  // 🔥 Ad open
   window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
 
-  // ⏳ delay (optional but good)
   setTimeout(() => {
-    document.getElementById("hiddenStory").style.display = "block";
-    document.getElementById("unlockBtn").style.display = "none";
-  }, 800);
 
+    const hidden = document.getElementById("hiddenStory");
+
+    hidden.style.display = "block";
+    hidden.style.opacity = "0";
+    hidden.style.transform = "translateY(10px)";
+
+    setTimeout(() => {
+      hidden.style.transition = "all 0.4s ease";
+      hidden.style.opacity = "1";
+      hidden.style.transform = "translateY(0)";
+    }, 50);
+
+    document.getElementById("unlockBtn").style.display = "none";
+
+  }, 800);
 }
 </script>
 
