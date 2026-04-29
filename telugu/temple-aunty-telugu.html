@@ -160,13 +160,21 @@
 .prose-story p {
   margin-bottom: 16px;
   line-height: 1.7;
-  text-align: left;
-  word-break: break-word;
 }
 
-.prose-story {
-  font-size: 16px;
-  letter-spacing: 0.2px;
+
+.hidden-story {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
+
+.hidden-story.show {
+  max-height: 2000px; /* enough large */
+  opacity: 1;
+  transform: translateY(0);
 }
 	
 </style>
@@ -359,8 +367,7 @@ class="text-center text-orange-400 font-semibold cursor-pointer text-lg animate-
 
 
 <!-- HIDDEN STORY -->
-<div id="hiddenStory" style="display:none;">
-
+<div id="hiddenStory" class="hidden-story">
 
 <p>
 Alane aunty ni chusthu unna aunty kuda nannu chusindhi chusi chinna smile echindhi. Nenu kuda smile echi alane kamam tho chusa aunty chusi em analedu. Inka alane gudi nunchi aunty ni follow avuthu valla home daaka valla address kanukunna.
@@ -1338,6 +1345,8 @@ function openAd() {
 }
 </script>
 
+
+	
 <script id="0j9m1z">
 function unlockStory() {
 
@@ -1345,17 +1354,7 @@ function unlockStory() {
 
   setTimeout(() => {
 
-    const hidden = document.getElementById("hiddenStory");
-
-    hidden.style.display = "block";
-    hidden.style.opacity = "0";
-    hidden.style.transform = "translateY(10px)";
-
-    setTimeout(() => {
-      hidden.style.transition = "all 0.4s ease";
-      hidden.style.opacity = "1";
-      hidden.style.transform = "translateY(0)";
-    }, 50);
+    document.getElementById("hiddenStory").classList.add("show");
 
     document.getElementById("unlockBtn").style.display = "none";
 
