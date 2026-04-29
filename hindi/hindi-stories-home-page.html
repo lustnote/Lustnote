@@ -600,7 +600,7 @@ function displayStories() {
   paginated.forEach(s => {
 
     let card = document.createElement("a");
-    card.href = s.link; // ✅ full clickable safe link
+    card.href = s.link;
 
     card.className = `
       glass rounded-2xl p-5 
@@ -612,24 +612,20 @@ function displayStories() {
     card.innerHTML = `
       <div class="flex items-center justify-between mb-2">
 
-        <!-- TAG -->
         <span class="text-[11px] px-2 py-1 rounded-full ${getCategoryColor(s.category)} font-bold uppercase">
           ${s.category || "Story"}
         </span>
 
-        <!-- DATE -->
         <span class="text-xs text-gray-400">
           ${s.date || "2026"}
         </span>
 
       </div>
 
-      <!-- TITLE -->
       <h3 class="text-lg font-semibold leading-snug line-clamp-2">
         ${s.title}
       </h3>
 
-      <!-- DESCRIPTION -->
       <p class="text-sm text-gray-400 mt-2 line-clamp-2">
         ${s.desc || "Read full story..."}
       </p>
@@ -641,7 +637,7 @@ function displayStories() {
   updateButtons();
 }
 
-// 🔘 BUTTON CONTROL
+// 🔘 BUTTON CONTROL (FULL FIX)
 function updateButtons() {
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
@@ -650,7 +646,7 @@ function updateButtons() {
   nextBtn.disabled = currentPage * storiesPerPage >= filteredStories.length;
 }
 
-// ⬅ PREV BUTTON
+// ⬅ PREV
 document.getElementById("prevBtn").onclick = () => {
   if (currentPage > 1) {
     currentPage--;
@@ -659,7 +655,7 @@ document.getElementById("prevBtn").onclick = () => {
   }
 };
 
-// ➡ NEXT BUTTON
+// ➡ NEXT
 document.getElementById("nextBtn").onclick = () => {
   if (currentPage * storiesPerPage < filteredStories.length) {
     currentPage++;
