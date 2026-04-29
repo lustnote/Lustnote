@@ -532,17 +532,17 @@ function closeMenu() {
 let currentPage = 1;
 const storiesPerPage = 5;
 
-// 👉 FILTER (Hindi only)
+// ✅ FILTER (Hindi only)
 let filteredStories = stories.filter(s => 
   s.language === "hindi"
 );
 
-// 👉 SORT BY DATE (LATEST FIRST)
-filteredStories.sort((a, b) => {
-  return new Date(b.date || "2026-01-01") - new Date(a.date || "2026-01-01");
-});
+// ✅ SORT (latest first)
+filteredStories.sort((a, b) => 
+  new Date(b.date || "2026-01-01") - new Date(a.date || "2026-01-01")
+);
 
-// 🎨 CATEGORY COLOR FUNCTION
+// 🎨 CATEGORY COLOR
 function getCategoryColor(cat) {
   if (!cat) return "bg-gray-500/20 text-gray-300";
 
@@ -551,18 +551,16 @@ function getCategoryColor(cat) {
   if (cat.includes("aunty")) return "bg-pink-500/20 text-pink-400";
   if (cat.includes("gf")) return "bg-blue-500/20 text-blue-400";
   if (cat.includes("vadhina")) return "bg-purple-500/20 text-purple-400";
-  if (cat.includes("hindi")) return "bg-yellow-500/20 text-yellow-400";
+  if (cat.includes("dosth")) return "bg-green-500/20 text-green-400";
 
   return "bg-gray-500/20 text-gray-300";
 }
 
 // 🚀 DISPLAY STORIES
 function displayStories() {
-
   const container = document.getElementById("storiesContainer");
   container.innerHTML = "";
 
-  // ❗ EMPTY CHECK
   if (filteredStories.length === 0) {
     container.innerHTML = `
       <p class="text-center text-gray-400 col-span-2">
@@ -580,26 +578,39 @@ function displayStories() {
   paginated.forEach(s => {
 
     let card = document.createElement("a");
-    card.href = window.location.origin + s.link;
+    card.href = s.link; // ✅ full clickable safe link
 
-    card.className = "glass rounded-2xl p-5 hover:scale-[1.02] transition block";
+    card.className = `
+      glass rounded-2xl p-5 
+      hover:scale-[1.02] 
+      transition block 
+      cursor-pointer
+    `;
 
     card.innerHTML = `
       <div class="flex items-center justify-between mb-2">
 
-        <span class="text-[10px] px-2 py-1 rounded-full ${getCategoryColor(s.category)} font-semibold uppercase">
+        <!-- TAG -->
+        <span class="text-[11px] px-2 py-1 rounded-full ${getCategoryColor(s.category)} font-bold uppercase">
           ${s.category || "Story"}
         </span>
 
+        <!-- DATE -->
         <span class="text-xs text-gray-400">
           ${s.date || "2026"}
         </span>
 
       </div>
 
+      <!-- TITLE -->
       <h3 class="text-lg font-semibold leading-snug line-clamp-2">
         ${s.title}
       </h3>
+
+      <!-- DESCRIPTION -->
+      <p class="text-sm text-gray-400 mt-2 line-clamp-2">
+        ${s.desc || "Read full story..."}
+      </p>
     `;
 
     container.appendChild(card);
@@ -617,7 +628,7 @@ function updateButtons() {
   nextBtn.disabled = currentPage * storiesPerPage >= filteredStories.length;
 }
 
-// ⬅ PREV
+// ⬅ PREV BUTTON
 document.getElementById("prevBtn").onclick = () => {
   if (currentPage > 1) {
     currentPage--;
@@ -626,7 +637,7 @@ document.getElementById("prevBtn").onclick = () => {
   }
 };
 
-// ➡ NEXT
+// ➡ NEXT BUTTON
 document.getElementById("nextBtn").onclick = () => {
   if (currentPage * storiesPerPage < filteredStories.length) {
     currentPage++;
@@ -638,5 +649,6 @@ document.getElementById("nextBtn").onclick = () => {
 // 🚀 INIT
 displayStories();
 </script>
+	
 </body>
 </html>
