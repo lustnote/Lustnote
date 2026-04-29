@@ -227,34 +227,40 @@
 
 <div class="flex justify-center gap-4 mt-10 flex-wrap">
 
-  <!-- PREV -->
+  <!-- PREV BUTTON -->
   <button id="prevBtn"
     class="group inline-flex items-center gap-2 rounded-xl 
-    bg-gradient-primary px-5 py-3 text-sm font-semibold 
-    text-primary-foreground shadow-glow 
-    transition-transform hover:scale-[1.03] active:scale-[0.97] 
-    disabled:opacity-40">
+    bg-gradient-to-r from-orange-500 to-orange-400 
+    px-5 py-3 text-sm font-semibold text-white 
+    shadow-[0_0_15px_rgba(255,138,61,0.5)] 
+    transition-all duration-200 
+    hover:scale-105 hover:shadow-[0_0_20px_rgba(255,138,61,0.8)] 
+    active:scale-95 disabled:opacity-40">
 
+    <!-- LEFT ARROW -->
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-      class="transition-transform group-hover:-translate-x-0.5">
+      class="transition-transform duration-200 group-hover:-translate-x-1">
       <path d="M19 12H5M11 19l-7-7 7-7"></path>
     </svg>
 
     Prev
   </button>
 
-  <!-- NEXT -->
+  <!-- NEXT BUTTON -->
   <button id="nextBtn"
     class="group inline-flex items-center gap-2 rounded-xl 
-    bg-gradient-primary px-5 py-3 text-sm font-semibold 
-    text-primary-foreground shadow-glow 
-    transition-transform hover:scale-[1.03] active:scale-[0.97] 
-    disabled:opacity-40">
+    bg-gradient-to-r from-orange-500 to-orange-400 
+    px-5 py-3 text-sm font-semibold text-white 
+    shadow-[0_0_15px_rgba(255,138,61,0.5)] 
+    transition-all duration-200 
+    hover:scale-105 hover:shadow-[0_0_20px_rgba(255,138,61,0.8)] 
+    active:scale-95 disabled:opacity-40">
 
     Next
 
+    <!-- RIGHT ARROW -->
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-      class="transition-transform group-hover:translate-x-0.5">
+      class="transition-transform duration-200 group-hover:translate-x-1">
       <path d="M5 12h14M13 5l7 7-7 7"></path>
     </svg>
 
