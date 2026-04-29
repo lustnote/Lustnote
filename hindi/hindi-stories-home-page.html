@@ -522,7 +522,7 @@ const storiesPerPage = 5;
 
 // 👉 FILTER (Hindi only)
 let filteredStories = stories.filter(s => 
-  s.category && s.category.toLowerCase().includes("hindi")
+  s.language === "hindi"
 );
 
 // 👉 SORT BY DATE (LATEST FIRST)
