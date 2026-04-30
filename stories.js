@@ -265,10 +265,16 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-04-29"
+  },
+
+    {
+    id: 27, 
+    title: "Lesbian sex chesthunte vachina boyfriend – 1.",
+    desc: " Chala days tarvatha malli lesbian sex chese chance vachindhi. Ma sex ela jarigindi end lo na boyfriend ela vachadu. Inka em chesaro ee katha.",
+    link: "/Lustnote/telugu/lesbian-telugu-story-1.html",
+    category: "lesbian",
+    language: "telugu",
+    date: "2026-05-01"
   }
-
-  
-  
-
   
 ];
