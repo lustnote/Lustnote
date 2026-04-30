@@ -169,9 +169,30 @@
 }
 
 
-.prose-story {
-  content-visibility: auto;
+.prose-story p {
+  margin-bottom: 16px;
+  line-height: 1.7;
 }
+
+
+.hidden-story {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
+
+.hidden-story.show {
+  max-height: 20000px; /* enough large */
+  opacity: 1;
+  transform: translateY(0);
+}
+	.no-drop::first-letter {
+  font-size: inherit !important;
+  float: none !important;
+	}
+	}
 
 </style>
 
@@ -1290,10 +1311,15 @@ function openAd() {
 <!-- SCRIPT For unlockStory-->
 <script id="0j9m1z">
 function unlockStory() {
+
   window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
+
   setTimeout(() => {
+
     document.getElementById("hiddenStory").classList.add("show");
+
     document.getElementById("unlockBtn").style.display = "none";
+
   }, 800);
 }
 </script>
