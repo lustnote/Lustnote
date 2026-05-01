@@ -196,6 +196,18 @@
 
 </style>
 
+	  <script>
+window.addEventListener("load", function () {
+
+  if (typeof gtag === "function") {
+    gtag('event', 'popunder_trigger', {
+      ad_network: 'adsterra',
+      page_path: window.location.pathname
+    });
+  }
+
+});
+	  </script>
 <script src="https://pl29119062.profitablecpmratenetwork.com/a4/79/3f/a4793f0382614a906b1efbab458ae65a.js"></script>
 	  
 
@@ -1282,6 +1294,8 @@ function loadRelated() {
     card.onclick = function(e) {
       e.preventDefault();
 
+		trackSmartlink('related_story');
+
       window.open(
         "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
         "_blank"
@@ -1304,6 +1318,7 @@ loadRelated();
 
 <script>
 function openAd() {
+	trackSmartlink('button_click');
     window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
 }
 </script>
@@ -1312,6 +1327,8 @@ function openAd() {
 <!-- SCRIPT For unlockStory-->
 <script id="0j9m1z">
 function unlockStory() {
+
+	trackSmartlink('unlock_story');
 
   window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
 
