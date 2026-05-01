@@ -1326,29 +1326,51 @@ function openAd() {
 }
 </script>
 
+	
+
 
 <!-- SCRIPT For unlockStory-->
-<script id="0j9m1z">
+<script>
 function unlockStory() {
 
-	trackSmartlink('unlock_story', function() {
-		
+  trackSmartlink('unlock_story', function() {
 
-  window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
+    window.open(
+      "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
+      "_blank"
+    );
 
-  setTimeout(() => {
+    setTimeout(() => {
 
-    document.getElementById("hiddenStory").classList.add("show");
+      document.getElementById("hiddenStory").classList.add("show");
+      document.getElementById("unlockBtn").style.display = "none";
 
-    document.getElementById("unlockBtn").style.display = "none";
+    }, 800);
 
-  }, 800);
+  });
+
 }
-				   }
 </script>
 
+	
 
 <!-- SCRIPT For Social Bar-->
+
+<script>
+function trackSmartlink(triggerType, callback) {
+
+  if (typeof gtag === "function") {
+    gtag('event', 'smartlink_click', {
+      trigger_type: triggerType,
+      page_path: window.location.pathname
+    });
+  }
+
+  if (callback) {
+    callback();
+  }
+}
+</script>
 <script src="https://pl29119070.profitablecpmratenetwork.com/19/dc/50/19dc50f8f1576576f08c337eacb6715e.js">
 </script>
 
