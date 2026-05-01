@@ -281,7 +281,7 @@ const stories = [
     id: 28, 
     title: "Lesbian sex chesthunte vachina boyfriend – 2.",
     desc: "Lesbian sex chesaka na boyfriend vachaka em jarigindhi. Tarvatha meghana ma sex lo ela join aindhi. Rahul mammalni ela satisfy chesado rasa.",
-    link: "/Lustnote/telugu/lesbian-telugu-story-1.html",
+    link: "/Lustnote/telugu/lesbian-telugu-story-2.html",
     category: "lesbian",
     language: "telugu",
     date: "2026-05-02"
