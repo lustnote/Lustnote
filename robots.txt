@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://lustnote.github.io/Lustnote/sitemap.xml
+Sitemap: https://lustnote.github.io/Lustnote/mysitemap.xml
