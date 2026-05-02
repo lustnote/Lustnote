@@ -285,6 +285,16 @@ const stories = [
     category: "lesbian",
     language: "telugu",
     date: "2026-05-02"
-      }
+      },
+
+    {
+    id: 29, 
+    title: "vadhina Ni Secret Ga Dengi Kadupu Chesa",
+    desc: "Ee Telugu Kama katha actual ga ma friend vadi vadinato chesina story. Vadu nato share chesinapudu first nammaledu kani tarvata real ga chusanu apudu namanu.",
+    link: "/Lustnote/telugu/vadhina-telugu-story-4.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-05-02"
+  }
   
 ];
