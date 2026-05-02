@@ -295,6 +295,16 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-05-02"
+  },
+
+    {
+    id: 30, 
+    title: "Doctor aunty tho na call boy experience.",
+    desc: "Na 1st client ne ela meet ayya. Thana tho ela sex chesano, inka thana dwara inko client ela set ayyaru ani ee story lo meetho share chestanu.",
+    link: "/Lustnote/telugu/telugu-doctor-aunty-tho-call-boy-experience.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-05-03"
   }
   
 ];
