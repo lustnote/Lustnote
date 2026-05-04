@@ -320,7 +320,7 @@ const stories = [
   {
     id: 32, 
     title: "vadhina tho Hydrabad lo naa dengulatta part 2",
-    desc: "Varasaku vadhina ayye akka ni Hyderabad lo kalisi. Memu close ayyaka hotel room lo ela dengina, enni sarlu dengi enjo chesamo ee katha Part 2.",
+    desc: "Varasaku vadhina ayye akka ni Hyderabad hotel room lo ela dengina, enni sarlu dengi enjo chesamo ee katha Part 2.",
     link: "/Lustnote/telugu/vadhina/vadhina-tho-hyd-lo-naa-story-part2.html",
     category: "vadhina",
     language: "telugu",
