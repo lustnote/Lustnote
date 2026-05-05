@@ -325,6 +325,16 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-05-05"
+  },
+
+  {
+    id: 33, 
+    title: "vadhina tho Hydrabad lo naa dengulatta part 3",
+    desc: "Varasaku vadhina ayye akka ni Hyderabad hotel room lo ela dengina, enni sarlu dengi enjo chesamo ee katha Part 3.",
+    link: "/Lustnote/telugu/vadhina/vadhina-tho-hyd-lo-naa-story-part3.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-05-06"
   }
 
   
