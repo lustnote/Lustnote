@@ -1085,8 +1085,11 @@ const currentPath = window.location.pathname;
 
 // 🔍 current story find
 function getCurrentStory() {
-  return stories.find(s => currentPath.includes(s.link)) || null;
-}
+  return stories.find(s =>
+ currentPath.endsWith(
+   s.link.split("/").pop()
+ )
+) || null;
 
 function loadRelated() {
 
