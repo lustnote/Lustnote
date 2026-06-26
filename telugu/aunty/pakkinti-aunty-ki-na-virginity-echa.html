@@ -1079,36 +1079,43 @@ input.addEventListener("focus", () => {
 
 
 
-<!-- auto related stories -->
 <script>
 const currentPath = window.location.pathname;
 
-// 🔍 current story find
+// Current story detect
 function getCurrentStory() {
   return stories.find(s =>
- currentPath.endsWith(
-   s.link.split("/").pop()
- )
-) || null;
+    currentPath.endsWith(s.link.split("/").pop())
+  ) || null;
+}
 
 function loadRelated() {
 
   const container = document.getElementById("relatedStories");
   if (!container) return;
 
-  let current = getCurrentStory();
-  if (!current) return;
+  const current = getCurrentStory();
 
-  // ✅ ONLY SAME CATEGORY
-  let filtered = stories.filter(s => {
-    return s.link !== current.link &&
-           s.category === current.category;
-  });
+  // Debug
+  console.log("Current Story:", current);
 
-  // shuffle
-  filtered.sort(() => 0.5 - Math.random());
+  if (!current) {
+    container.innerHTML = "<p>No related stories found.</p>";
+    return;
+  }
 
-  // pick 5
+  // Same category stories only
+  let filtered = stories.filter(s =>
+    s.link !== current.link &&
+    s.category === current.category
+  );
+
+  // Latest first
+  filtered.sort((a, b) =>
+    new Date(b.date) - new Date(a.date)
+  );
+
+  // Top 5
   let selected = filtered.slice(0, 5);
 
   container.innerHTML = "";
@@ -1116,40 +1123,32 @@ function loadRelated() {
   selected.forEach(s => {
 
     let card = document.createElement("a");
-    card.href = "#";
 
-    card.className = "group glass rounded-2xl p-5 transition-all hover:-translate-y-1";
+    card.href = window.location.origin + s.link;
+
+    card.className =
+      "block glass rounded-2xl p-5 mb-3 hover:-translate-y-1 transition-all";
 
     card.innerHTML = `
-      <div class="text-xs text-primary mb-1">${s.category.toUpperCase()}</div>
-      <h3 class="font-display text-lg">${s.title}</h3>
-      <p class="text-xs text-muted-foreground mt-1">${s.date}</p>
+      <div class="text-xs text-primary mb-1">
+        ${s.category.toUpperCase()}
+      </div>
+
+      <h3 class="font-display text-lg">
+        ${s.title}
+      </h3>
+
+      <p class="text-xs text-muted-foreground mt-1">
+        ${s.date}
+      </p>
     `;
-
-    // 💰 SMARTLINK + REDIRECT
-    card.onclick = function(e) {
-      e.preventDefault();
-
-      trackSmartlink('related_story', function() {
-
-        window.open(
-          "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
-          "_blank"
-        );
-
-        setTimeout(() => {
-          window.location.href = window.location.origin + s.link;
-        }, 800);
-
-      });
-    };
 
     container.appendChild(card);
   });
 }
 
-// 🚀 RUN
-loadRelated();
+// Run
+document.addEventListener("DOMContentLoaded", loadRelated);
 </script>
 	
 
