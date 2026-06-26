@@ -341,7 +341,7 @@ const stories = [
     id: 34, 
     title: "Pkkinti Aunty ki na virginity echi sukhapeta.",
     desc: "Pakkinnti lo unde aunty tho nen ela chesa. Aunty naku sex lo sukham chupinchi ela thana korika teerchukuni sukha padindho ee katha lo rasa.",
-    link: "/Lustnote/telugu/aunty/pakkinti-ki-na-virginity-echa.html",
+    link: "/Lustnote/telugu/aunty/pakkinti-aunty-ki-na-virginity-echa.html",
     category: "aunty",
     language: "telugu",
     date: "2026-06-23"
