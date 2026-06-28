@@ -345,6 +345,16 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-06-23"
+  },
+
+  {
+    id: 35, 
+    title: "Kondapur hostel aunty puku ruchi – 1.",
+    desc: "Kondapur boys hostel lo daily cleaning vastunna 34 years Lakshmi aunty tho start ayyina secret romance empty hostel room lo sex ga ayindi.",
+    link: "/Lustnote/telugu/aunty/kondapur-hostel-aunty.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-06-27"
   }
 
   
