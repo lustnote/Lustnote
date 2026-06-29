@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lustnote.github.io/Lustnote/sitemap.xml
+Sitemap: https://lustnote.github.io/Lustnote/telugu/sitemap1.xml
