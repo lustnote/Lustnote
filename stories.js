@@ -359,7 +359,7 @@ const stories = [
 
   
   {
-    id: 4, 
+    id: 36, 
     title: "Pakkinti Akka Tho Thamudu Srungaram.",
     desc: "Ma pakkintlo unde Vaishnavi akka tho nenu ela romance chesthu close ayyanu. Inka ma iddari ranku ela modalu ayindo ee katha lo rasanu.",
     link: "/Lustnote/telugu/akka-thamudu/pakkinti-akka-tho-srungaram.html",
