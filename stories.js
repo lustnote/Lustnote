@@ -355,6 +355,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-06-27"
+  },
+
+  
+  {
+    id: 4, 
+    title: "Pakkinti Akka Tho Thamudu Srungaram.",
+    desc: "Ma pakkintlo unde Vaishnavi akka tho nenu ela romance chesthu close ayyanu. Inka ma iddari ranku ela modalu ayindo ee katha lo rasanu.",
+    link: "/Lustnote/telugu/akka-thamudu/pakkinti-akka-tho-srungaram.html",
+    category: "akka",
+    language: "telugu",
+    date: "2026-06-25"
   }
 
   
