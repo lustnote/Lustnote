@@ -366,6 +366,16 @@ const stories = [
     category: "akka",
     language: "telugu",
     date: "2026-06-25"
+  },
+
+    {
+    id: 37,
+    title: "UK Lo Telugu Ammai Tho First Experience Part-1",
+    desc: "Ee story lo nenu ah ammai ni ela kalisano, ela friendship start ayyindo adi sex varuku ela vellindo chepputhanu. Chadivi enjoy cheyandi.",
+    link: "/Lustnote/telugu/girlfriend/ul-lo-telugu-ammai-part1.html",
+    category: "girlfriend",
+    language: "telugu",
+    date: "2026-05-02"
   }
 
   
