@@ -376,7 +376,19 @@ const stories = [
     category: "girlfriend",
     language: "telugu",
     date: "2026-05-02"
-  }
+  },
+
+      {
+    id: 38,
+    title: "UK Lo Telugu Ammai Tho First Experience Part-2",
+    desc: "Ee story lo nenu ah ammai ni ela kalisano, ela friendship start ayyindo adi sex varuku ela vellindo chepputhanu idhi part 2. Chadivi enjoy cheyandi.",
+    link: "/telugu/girlfriend/uk-lo-telugu-ammai-part2.html",
+    category: "girlfriend",
+    language: "telugu",
+    date: "2026-05-03"
+      }
+
+  
 
   
 ];
