@@ -386,7 +386,17 @@ const stories = [
     category: "girlfriend",
     language: "telugu",
     date: "2026-05-03"
-      }
+      },
+
+    {
+    id: 39, 
+    title: "Dating app lo meet ayinaa big boobs aunty.",
+    desc: "Truth or dare game aaduthu aunty nanu elaa thana pedha boobs choopisthu tempt chesi elaa nenu thanani hardcore lo dengano ee sexy lust story.",
+    link: "/telugu/aunty/dating-app-aunty-meeting.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-07-13"
+  }
 
   
 
