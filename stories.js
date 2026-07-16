@@ -396,9 +396,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-07-13"
-  }
+  },
 
-  
+  {
+    id: 40, 
+    title: "Akka Tho Thammudu Oka Rathri",
+    desc: "Chala years ga akka meedha unna kasi ni oka rathri lo ela theerchkoni enjoy chesanu. And akka sexy parts ni ela enjoy chesa anedi ee story.",
+    link: "/telugu/akka-thamudu/akka-tho-thamudu-oka-rathri.html",
+    category: "akka",
+    language: "telugu",
+    date: "2026-07-15"
+  }
 
   
 ];
