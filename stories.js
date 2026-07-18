@@ -427,6 +427,16 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-07-18"
+  },
+
+ {
+    id: 43, 
+    title: "Vadhina Puku Dhula Thirchina Maridhi.",
+    desc: "Annaya pelam tho dengulata entha kasiga jarigindi. Asalu Hyderabad vachina vadhina tho ela ranku start ayyi denginchukunano chadavandi.",
+    link: "/telugu/vadhina/vadhina-puku-dhula-thirchina-mwridhi.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-07-18"
   }
 
   
