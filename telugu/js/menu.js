@@ -46,7 +46,7 @@ function toggleMenu() {
             Languages
           </a>
 
-          <a href="../../Cat/category.html">
+          <a href="../../telugu/telugu-category-list.html">
             Categories
           </a>
 
