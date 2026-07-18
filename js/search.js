@@ -1,9 +1,3 @@
-<!-- DATA For Search Box -->
-<script src="../../stories.js"></script>
-
-<!-- SCRIPT For Saerch Box-->
-<script>
-
 const input = document.getElementById("searchInput");
 const results = document.getElementById("searchResults");
 const clearBtn = document.getElementById("clearBtn");
@@ -18,18 +12,27 @@ input.addEventListener("keyup", () => {
 
   if (value === "") return;
 
-  let filtered = stories.filter(s =>
-  s.title.toLowerCase().includes(value) ||
-  (s.desc && s.desc.toLowerCase().includes(value)) ||
-  s.category.toLowerCase().includes(value)
-);
+  let filtered = stories.filter(s => {
+
+    // Backward compatibility
+    const tags = s.categories || [s.category];
+
+    return (
+      s.title.toLowerCase().includes(value) ||
+      (s.desc && s.desc.toLowerCase().includes(value)) ||
+      tags.some(tag => tag.toLowerCase().includes(value))
+    );
+  });
 
   if (filtered.length === 0) {
-    results.innerHTML = "<li style='padding:10px;color:#888'>No results found</li>";
+    results.innerHTML =
+      "<li style='padding:10px;color:#888'>No results found</li>";
     return;
   }
 
   filtered.forEach(s => {
+
+    const tags = s.categories || [s.category];
 
     let li = document.createElement("li");
     li.classList.add("result-item");
@@ -39,8 +42,9 @@ input.addEventListener("keyup", () => {
         <div style="color:#facc15;">
           ${highlight(s.title, value)}
         </div>
+
         <div class="category-tag">
-          ${s.category.toUpperCase()}
+          ${tags.join(" • ").toUpperCase()}
         </div>
       </a>
     `;
@@ -80,5 +84,3 @@ input.addEventListener("focus", () => {
     input.dispatchEvent(new Event("keyup"));
   }
 });
-
-</script>
