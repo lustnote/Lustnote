@@ -417,7 +417,19 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-05-05"
+  },
+
+  {
+    id: 42, 
+    title: "Bhanu Vadhinani Balam Ga Dengi Shukapeta",
+    desc: "Bhanu vadina ni ela balam ga denganu anedi rasanu. Anna uriki vellina weekend antha entha kasi ga aa 2 days non stop sex chesamo chadavandi.",
+    link: "/telugu/vadhina/bhanu-vadhinani-balamga-denga.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-07-18"
   }
+
+  
 
   
 ];
