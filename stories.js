@@ -326,6 +326,7 @@ const stories = [
     language: "telugu",
     date: "2026-05-05"
   },
+  
 
   {
     id: 33, 
@@ -406,6 +407,16 @@ const stories = [
     category: "akka",
     language: "telugu",
     date: "2026-07-15"
+  },
+
+    {
+    id: 41, 
+    title: "vadhina Tho Birthday Roju Sex Nenu Chesa.",
+    desc: "Vadina birthday roju ela tempt ayyi vadina ni dengano. Alane asalu thana vadina andalu chusi tempt ayyi ela enjoy chesano ee katha lo rasa.",
+    link: "/telugu/vadhina/vadhina-bday-sex.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-05-05"
   }
 
   
