@@ -853,8 +853,7 @@ updateUI();
 <!-- SCRIPT For Saerch Box-->
 <script src="../../telugu/js/search.js"></script>
 
-<!-- auto related stories -->
-<script src="../../telugu/js/related-stories.js"></script>
+
 
 <script>
 function openAd() {
@@ -884,6 +883,77 @@ function unlockStory() {
   });
 
 }
+</script>
+
+	
+<!-- auto related stories -->
+<script>
+const currentPath = window.location.pathname;
+
+// 🔍 current story find
+function getCurrentStory() {
+  return stories.find(s => currentPath.includes(s.link)) || null;
+}
+
+function loadRelated() {
+
+  const container = document.getElementById("relatedStories");
+  if (!container) return;
+
+  let current = getCurrentStory();
+  if (!current) return;
+
+  // ✅ ONLY SAME CATEGORY
+  let filtered = stories.filter(s => {
+    return s.link !== current.link &&
+           s.category === current.category;
+  });
+
+  // shuffle
+  filtered.sort(() => 0.5 - Math.random());
+
+  // pick 5
+  let selected = filtered.slice(0, 5);
+
+  container.innerHTML = "";
+
+  selected.forEach(s => {
+
+    let card = document.createElement("a");
+    card.href = "#";
+
+    card.className = "group glass rounded-2xl p-5 transition-all hover:-translate-y-1";
+
+    card.innerHTML = `
+      <div class="text-xs text-primary mb-1">${s.category.toUpperCase()}</div>
+      <h3 class="font-display text-lg">${s.title}</h3>
+      <p class="text-xs text-muted-foreground mt-1">${s.date}</p>
+    `;
+
+    // 💰 SMARTLINK + REDIRECT
+    card.onclick = function(e) {
+      e.preventDefault();
+
+      trackSmartlink('related_story', function() {
+
+        window.open(
+          "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
+          "_blank"
+        );
+
+        setTimeout(() => {
+          window.location.href = window.location.origin + s.link;
+        }, 800);
+
+      });
+    };
+
+    container.appendChild(card);
+  });
+}
+
+// 🚀 RUN
+loadRelated();
 </script>
 
 	
