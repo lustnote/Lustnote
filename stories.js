@@ -447,7 +447,17 @@ const stories = [
     category: "panimanishi",
     language: "telugu",
     date: "2026-07-20"
-      }
+      },
+
+   {
+    id: 45, 
+    title: "Bayata puku nunchi intlo puku ki vacha.",
+    desc: "Ippati varaku bayata valla pukulu ruchi chusina nenu. Kothaga incest sex cheydam jargindhi. Adi ela start ayindo ee katha lo chadavandi.",
+    link: "/telugu/vadhina/vadhina-puku-dhula-thirchina-maridhi.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-07-20"
+  }
 
   
 
