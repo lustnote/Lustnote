@@ -437,7 +437,17 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-07-18"
-  }
+  },
+
+      {
+    id: 44, 
+    title: "Naa PaniManishi Tho Naa Kamma Kreeda.",
+    desc: "Ee story lo na panimanishi ma nanna tho denginchukunna tharuvatha dhani nen ela denganuu anedhi ee story meeru chadivi anandha padandi.",
+    link: "/telugu/panimanishi/maid-tho-kama-kreeda.html",
+    category: "panimanishi",
+    language: "telugu",
+    date: "2026-07-20"
+      }
 
   
 
