@@ -87,7 +87,8 @@ window.addEventListener("load", function () {
 });
 	  </script>
 
-<script src="https://pl29119062.profitablecpmratenetwork.com/a4/79/3f/a4793f0382614a906b1efbab458ae65a.js"></script>
+
+<script src="https://endedstrung.com/b1/61/90/b161907fab042601111c2703c7919b31.js"></script>
 	  
 
 </head>
@@ -583,7 +584,7 @@ class="group glass rounded-2xl p-5 transition-all hover:-translate-y-1 hover:sca
     
     
     
-    <footer class="border-t border-border mt-20">
+<footer class="border-t border-border mt-20">
     
     <div class="mx-auto max-w-6xl px-5 py-10 grid sm:grid-cols-3 gap-8 text-sm">
     <div>
@@ -677,7 +678,7 @@ function toggleMenu() {
         </div>
 
         <div class="flex flex-col gap-4 text-lg">
-          <a href="../index.html">Home</a>
+          <a href="../../index.html">Home</a>
               <a href="../../index.html" class="hover:text-foreground transition-colors">Languages</a>
           <a href="../../telugu/telugu-category-list.html">Categories</a>
           <a href="../../about.html">About</a>
@@ -714,9 +715,9 @@ function closeMenu() {
 const pageKey = window.location.pathname;
 
 // 🔥 👉 MANUAL DEFAULT VALUES (CHANGE HERE)
-const defaultLike = 295;
-const defaultDislike = 73;
-const defaultViews = 30899;
+const defaultLike = 328;
+const defaultDislike = 24;
+const defaultViews = 20899;
 
 // 📊 INITIAL VALUES
 let like = parseInt(localStorage.getItem(pageKey+"_like")) || defaultLike;
@@ -942,13 +943,14 @@ input.addEventListener("focus", () => {
 
 
 
-<!-- auto related stories -->
 <script>
 const currentPath = window.location.pathname;
 
-// 🔍 current story find
+// Current story detect
 function getCurrentStory() {
-  return stories.find(s => currentPath.includes(s.link)) || null;
+  return stories.find(s =>
+    currentPath.endsWith(s.link.split("/").pop())
+  ) || null;
 }
 
 function loadRelated() {
@@ -956,19 +958,28 @@ function loadRelated() {
   const container = document.getElementById("relatedStories");
   if (!container) return;
 
-  let current = getCurrentStory();
-  if (!current) return;
+  const current = getCurrentStory();
 
-  // ✅ ONLY SAME CATEGORY
-  let filtered = stories.filter(s => {
-    return s.link !== current.link &&
-           s.category === current.category;
-  });
+  // Debug
+  console.log("Current Story:", current);
 
-  // shuffle
-  filtered.sort(() => 0.5 - Math.random());
+  if (!current) {
+    container.innerHTML = "<p>No related stories found.</p>";
+    return;
+  }
 
-  // pick 5
+  // Same category stories only
+  let filtered = stories.filter(s =>
+    s.link !== current.link &&
+    s.category === current.category
+  );
+
+  // Latest first
+  filtered.sort((a, b) =>
+    new Date(b.date) - new Date(a.date)
+  );
+
+  // Top 5
   let selected = filtered.slice(0, 5);
 
   container.innerHTML = "";
@@ -976,40 +987,32 @@ function loadRelated() {
   selected.forEach(s => {
 
     let card = document.createElement("a");
-    card.href = "#";
 
-    card.className = "group glass rounded-2xl p-5 transition-all hover:-translate-y-1";
+    card.href = window.location.origin + s.link;
+
+    card.className =
+      "block glass rounded-2xl p-5 mb-3 hover:-translate-y-1 transition-all";
 
     card.innerHTML = `
-      <div class="text-xs text-primary mb-1">${s.category.toUpperCase()}</div>
-      <h3 class="font-display text-lg">${s.title}</h3>
-      <p class="text-xs text-muted-foreground mt-1">${s.date}</p>
+      <div class="text-xs text-primary mb-1">
+        ${s.category.toUpperCase()}
+      </div>
+
+      <h3 class="font-display text-lg">
+        ${s.title}
+      </h3>
+
+      <p class="text-xs text-muted-foreground mt-1">
+        ${s.date}
+      </p>
     `;
-
-    // 💰 SMARTLINK + REDIRECT
-    card.onclick = function(e) {
-      e.preventDefault();
-
-      trackSmartlink('related_story', function() {
-
-        window.open(
-          "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
-          "_blank"
-        );
-
-        setTimeout(() => {
-          window.location.href = window.location.origin + s.link;
-        }, 800);
-
-      });
-    };
 
     container.appendChild(card);
   });
 }
 
-// 🚀 RUN
-loadRelated();
+// Run
+document.addEventListener("DOMContentLoaded", loadRelated);
 </script>
 	
 
@@ -1017,7 +1020,7 @@ loadRelated();
 <script>
 function openAd() {
 	trackSmartlink('button_click');
-    window.open("https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966", "_blank");
+    window.open("https://endedstrung.com/zyupp5ax0?key=5f4d94b85b6419b4dbd642d3ea5649d1", "_blank");
 }
 </script>
 
@@ -1031,7 +1034,7 @@ function unlockStory() {
   trackSmartlink('unlock_story', function() {
 
     window.open(
-      "https://www.profitablecpmratenetwork.com/sgtdj96rhz?key=29a2fc33dfc2632681a83cdb18590966",
+      "https://endedstrung.com/zyupp5ax0?key=5f4d94b85b6419b4dbd642d3ea5649d1",
       "_blank"
     );
 
@@ -1066,8 +1069,7 @@ function trackSmartlink(triggerType, callback) {
   }
 }
 </script>
-
-<script src="https://pl29119070.profitablecpmratenetwork.com/19/dc/50/19dc50f8f1576576f08c337eacb6715e.js">
+<script src="https://endedstrung.com/zyupp5ax0?key=5f4d94b85b6419b4dbd642d3ea5649d1">
 </script>
 
 
