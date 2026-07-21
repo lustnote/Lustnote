@@ -439,7 +439,7 @@ const stories = [
     date: "2026-07-18"
   },
 
-      {
+ {
     id: 44, 
     title: "Naa PaniManishi Tho Naa Kamma Kreeda.",
     desc: "Ee story lo na panimanishi ma nanna tho denginchukunna tharuvatha dhani nen ela denganuu anedhi ee story meeru chadivi anandha padandi.",
@@ -447,9 +447,9 @@ const stories = [
     category: "panimanishi",
     language: "telugu",
     date: "2026-07-20"
-      },
+  },
 
-   {
+  { 
     id: 45, 
     title: "Bayata puku nunchi intlo puku ki vacha.",
     desc: "Ippati varaku bayata valla pukulu ruchi chusina nenu. Kothaga incest sex cheydam jargindhi. Adi ela start ayindo ee katha lo chadavandi.",
@@ -457,9 +457,17 @@ const stories = [
     category: "vadhina",
     language: "telugu",
     date: "2026-07-20"
-  }
+  },
 
-  
+{
+    id: 46, 
+    title: "Paddu aunty tho ranku modalayindi.",
+    desc: "Ma street lo unna Paddu aunty natho prema lo padi. Ma first sex. oka memorable and hard core sex ga ela marindi. Ma kasi dengudu ee katha.",
+    link: "/telugu/aunty/paddu-aunty-tho-ranku.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-07-21"
+  }
 
   
 ];
