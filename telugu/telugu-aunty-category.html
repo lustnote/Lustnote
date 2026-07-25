@@ -737,17 +737,21 @@ function displayStories() {
 
 }
 
-// 🔘 Buttons
+/// 🔘 Buttons
 function updateButtons() {
 
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
+  const pageCount = document.getElementById("pageCount");
+
+  const totalPages = Math.ceil(filteredStories.length / storiesPerPage);
 
   prevBtn.disabled = currentPage === 1;
 
-  nextBtn.disabled = 
-    currentPage * storiesPerPage >= filteredStories.length;
+  nextBtn.disabled =
+    currentPage >= totalPages;
 
+  pageCount.textContent = `Page ${currentPage} of ${totalPages}`;
 }
 
 // ⬅ Prev
