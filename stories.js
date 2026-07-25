@@ -477,9 +477,16 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-07-24"
-  }
+  },
 
-
-
+    {
+    id: 48, 
+    title: "Anu aunty tho na prema kalapam.",
+    desc: "Feelings unna cheppukoledhu kani uncle leni time lo plan chesi nannu intiki pilichindhi ma pakkinti aunty. 3 days non stop denginchukunnam.",
+    link: "/telugu/aunty/anu-aunty-tho-na-prema.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-07-25"
+    }
   
 ];
