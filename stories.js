@@ -467,7 +467,19 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-07-21"
+  },
+
+  {
+    id: 47, 
+    title: "Aunty friend ki chukkalu choopinchina kurrodu.",
+    desc: "Natho denginchukunna aunty thana friend ni set chesindi. Thanu Keerthi, inka memu ela denginchukuni sukha padddamo ee katha lo rasanu.",
+    link: "/telugu/aunty/Aunty-friend-ki-chukkalu-chupinchina-kurrodu.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-07-24"
   }
+
+
 
   
 ];
