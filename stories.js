@@ -487,6 +487,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-07-25"
-    }
+    },
+
+    {
+    id: 49, 
+    title: "Power Cut Lo Vadina Ni Dengi Vayinchanu.",
+    desc: "Ee telugu LustNote lo, na vadina nu dengi mundu ela dengano taruvata tane enduku nanu dengamando, power cut em chesindo, meru enjoy cheyandi.",
+    link: "/telugu/vadhina/power-cut-lo-vadhina-tho-sex.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-07-26"
+  }
+
   
 ];
