@@ -503,7 +503,7 @@ const stories = [
     id: 50, 
     title: "Pedda gudda aunty Sridevi – 1.",
     desc: "Oka young engineering student Vamshi mall lo lonely ga unna 39 years aunty Sridevi ni kalustadu. Ala ame flat ki ameni ela dengado ee katha.",
-    link: "/telugu/aunty/pedha-gudha-sredevi-aunty-p1.html",
+    link: "/telugu/aunty/pedha-gudha-aunty-sridevi-p1.html",
     category: "aunty",
     language: "telugu",
     date: "2026-08-07"
