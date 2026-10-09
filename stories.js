@@ -517,6 +517,16 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-08-07"
+        },
+
+         {
+    id: 52, 
+    title: "Theatre lo aunty tho modalaina parichayam.",
+    desc: "Theatre lo na pakka seat oka aunty kurchuni unde. Naku habit error vala aame popcorn teskoni tina, sorry chepa. Tarwatha em ayindo ee katha.",
+    link: "/telugu/aunty/theater-lo-aunty-tho-sex.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-08-08"
         }
 
   
