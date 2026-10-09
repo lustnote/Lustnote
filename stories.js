@@ -507,7 +507,17 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-08-07"
-      }
+      },
+
+        {
+    id: 51, 
+    title: "Massage kosam pilichina Kamala aunty.",
+    desc: "Life lo satisfaction leni aunty ki massage tho start ayi life lo eppudu pondanantha satisfaction pondindi. Full day sex and fantasies.",
+    link: "/telugu/aunty/massage-kosam-aunty.html",
+    category: "aunty",
+    language: "telugu",
+    date: "2026-08-07"
+        }
 
   
 ];
