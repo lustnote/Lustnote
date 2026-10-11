@@ -527,7 +527,18 @@ const stories = [
     category: "aunty",
     language: "telugu",
     date: "2026-08-08"
-        }
+        },
+
+  {
+    id: 53,
+    title: "Pakkinti Pinni tho Sex",
+    desc: "Katti lanti pinni ni workout chesthu line lo pettanu. Thana mogudu intlo leni oka night ela pinni puku pagala dengi sukhapettano ee katha.",
+    link: "/telugu/pinni-koduku/pakkinti-pinni-tho-sex.html",
+    category: "pinni-koduku, relatives",
+    language: "telugu",
+    date: "2026-08-07"
+  }
+  
 
   
 ];
