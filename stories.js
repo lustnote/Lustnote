@@ -537,6 +537,17 @@ const stories = [
     category: "pinni-koduku",
     language: "telugu",
     date: "2026-08-07"
+  },
+
+  
+    {
+    id: 54, 
+    title: "Vadhina tho maridhi love to marriage sex story.",
+    desc: "Na vadina ki sex ela ayinde. evarini evaram set chesukunam. Ela love chasukunnam. ela lechi poi ela marriage chesukunnam ani chepthanu.",
+    link: "/telugu/vadhina/vadhina-maridhi-love-to-marriage.html",
+    category: "vadhina",
+    language: "telugu",
+    date: "2026-08-10"
   }
   
 
